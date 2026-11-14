@@ -1,0 +1,82 @@
+{
+  "pairs": {
+    "BTC_ETH": {
+      "pearson": 0.6578846242423358,
+      "pearson_ci95": [
+        0.6522191091344779,
+        0.6631868156602189
+      ],
+      "sign_agreement_nonzero": 0.7286815758180214,
+      "sign_ci95": [
+        0.7219677703994463,
+        0.732775883157666
+      ],
+      "nonzero_n": 26069,
+      "matching_n": 18996,
+      "excluded_zero_n": 427
+    },
+    "BTC_SOL": {
+      "pearson": 0.6650046592764213,
+      "pearson_ci95": [
+        0.6602654615611292,
+        0.6704210785677036
+      ],
+      "sign_agreement_nonzero": 0.7332337508138956,
+      "sign_ci95": [
+        0.7287732326225027,
+        0.7365600610762015
+      ],
+      "nonzero_n": 26109,
+      "matching_n": 19144,
+      "excluded_zero_n": 387
+    },
+    "ETH_SOL": {
+      "pearson": 0.6694947335923226,
+      "pearson_ci95": [
+        0.6615379314108174,
+        0.6796117703869525
+      ],
+      "sign_agreement_nonzero": 0.7370172084130019,
+      "sign_ci95": [
+        0.7303912195495048,
+        0.7445704283968988
+      ],
+      "nonzero_n": 26150,
+      "matching_n": 19273,
+      "excluded_zero_n": 346
+    }
+  },
+  "n_returns": 26496,
+  "n_complete_days": 92,
+  "bootstrap_draws": 5000,
+  "block_days": 7,
+  "seed": 20261114,
+  "status": "SYNTHETIC_TECH_AUDIT_ONLY",
+  "checks_passed": 18,
+  "check_names": [
+    "all_three_pairs",
+    "time_open_close",
+    "closed_returns_no_lookahead",
+    "92_complete_days",
+    "pairwise_zero_policy",
+    "pearson_numpy_crosscheck",
+    "unit_scale_invariance",
+    "paired_block_resampling",
+    "deterministic_seed",
+    "partial_day_rejected",
+    "missing_candle_rejected",
+    "duplicate_rejected",
+    "nan_rejected",
+    "nonpositive_price_rejected",
+    "misaligned_open_rejected",
+    "independent_returns_control",
+    "perfect_negative_control",
+    "zero_variance_rejected"
+  ],
+  "python_version": "3.13.5",
+  "numpy_version": "2.3.5",
+  "pandas_version": "2.2.3",
+  "seed_note": "Same seed used for synthetic prices and for resampling; reproducible.",
+  "no_real_market_data": true,
+  "no_phase_c_release": true
+}
