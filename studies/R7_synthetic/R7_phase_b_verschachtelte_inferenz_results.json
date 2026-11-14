@@ -1,0 +1,121 @@
+{
+  "status": "PHASE_B_DIAGNOSTIC_ONLY_NO_MARKET_DATA_NO_PHASE_C",
+  "model": "hourly reduced-form proxy for R7 nested B2 vs M2; NOT full 5m HAR DGP",
+  "seed": 20261114,
+  "reps": 300,
+  "test_hours": 2159,
+  "train_hours": 6600,
+  "refits": [
+    0,
+    744,
+    1416
+  ],
+  "bootstrap_reps": 1000,
+  "block_days": 7,
+  "hac_lags": 7,
+  "data_generated": "synthetic linear y with serially clustered conditional variance",
+  "nulls": "exact zero BTC regression coefficient by construction, correlated null includes common predictor factor",
+  "weak_effect": "BTC coefficient 0.060 ex ante, not guaranteed 1-2 percent gain",
+  "cw_caveat": "daily CW-HAC secondary diagnostic; no formal finite-sample size assurance",
+  "result": {
+    "independent_null": {
+      "replications": 300,
+      "counts": {
+        "raw_hac_p_lt_05": 8,
+        "cw_hac_p_lt_05": 18,
+        "raw_compound_gate": 6,
+        "raw_boot_lower_gt_0": 6
+      },
+      "rate_exact_binomial_95pct_ci": {
+        "raw_hac_p_lt_05": [
+          0.011581567754335208,
+          0.05186581196108239
+        ],
+        "cw_hac_p_lt_05": [
+          0.035943874415138785,
+          0.09317029607198865
+        ],
+        "raw_compound_gate": [
+          0.007374162001611383,
+          0.04302108267362232
+        ],
+        "raw_boot_lower_gt_0": [
+          0.007374162001611383,
+          0.04302108267362232
+        ]
+      },
+      "mean_gain_pct": -0.036566658175610625,
+      "median_gain_pct": -0.032058187198252,
+      "gain_pct_10_90_quantile": [
+        -0.14381575823971476,
+        0.06522411319468947
+      ]
+    },
+    "correlated_null": {
+      "replications": 300,
+      "counts": {
+        "raw_hac_p_lt_05": 5,
+        "cw_hac_p_lt_05": 21,
+        "raw_compound_gate": 1,
+        "raw_boot_lower_gt_0": 2
+      },
+      "rate_exact_binomial_95pct_ci": {
+        "raw_hac_p_lt_05": [
+          0.005433205315114428,
+          0.038463744964914004
+        ],
+        "cw_hac_p_lt_05": [
+          0.04385034475542933,
+          0.10501399955004978
+        ],
+        "raw_compound_gate": [
+          8.438913231782062e-05,
+          0.01843125204806789
+        ],
+        "raw_boot_lower_gt_0": [
+          0.0008083864124312155,
+          0.02387349757217363
+        ]
+      },
+      "mean_gain_pct": -0.04153908042630353,
+      "median_gain_pct": -0.03759196903121535,
+      "gain_pct_10_90_quantile": [
+        -0.12763446097724804,
+        0.04951829725733543
+      ]
+    },
+    "weak_added_signal": {
+      "replications": 300,
+      "counts": {
+        "raw_hac_p_lt_05": 143,
+        "cw_hac_p_lt_05": 275,
+        "raw_compound_gate": 111,
+        "raw_boot_lower_gt_0": 113
+      },
+      "rate_exact_binomial_95pct_ci": {
+        "raw_hac_p_lt_05": [
+          0.4189581580700434,
+          0.5348404577247352
+        ],
+        "cw_hac_p_lt_05": [
+          0.8794412631240668,
+          0.9453457241215337
+        ],
+        "raw_compound_gate": [
+          0.31522499117580083,
+          0.4273705291112956
+        ],
+        "raw_boot_lower_gt_0": [
+          0.3216290505585251,
+          0.43416636827560623
+        ]
+      },
+      "mean_gain_pct": 0.4186978846208327,
+      "median_gain_pct": 0.41394344897898716,
+      "gain_pct_10_90_quantile": [
+        0.061581703385723933,
+        0.7735763637861539
+      ]
+    }
+  }
+}
