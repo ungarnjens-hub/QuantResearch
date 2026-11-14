@@ -1,0 +1,70 @@
+{
+  "scope": "R8 Phase B synthetic only",
+  "run_dir": "/home/icom/QuantResearch/R8_Batch/R8_full_zBTjzYDK",
+  "market_data_used": false,
+  "phase_c_approved": false,
+  "runner_and_protocol_hashes": {
+    "source_sha256": "6a8e3393952536706d6751d039577d21dd390bcab0107148275229e0221eddff",
+    "script_sha256": "c67ded5c5d2812d20608ad9508ad6c6dc4d3efbee9708dbaa09dfa5ab67fe6f9",
+    "protocol_sha256": "b3284c6e92e1de529b300b51556990e6b2d8076f06c2685fead783a6bde49bff"
+  },
+  "source_evidence": {
+    "summary.json": {
+      "sha256": "b9de892e7ca57eb0dcc7e08fecaaf3874dd639fbd93bc4da23e5d4803807cb56",
+      "bytes": 1236
+    },
+    "independent_null.jsonl": {
+      "sha256": "92115cbbaba620e28d1c9a2c27f8131d74f367dc170e1f1bc0aa12bc26537bc5",
+      "bytes": 66690
+    },
+    "common_factor_null.jsonl": {
+      "sha256": "18751f50c059940453bdfc331c08f1272ad6b19ae910b8af3b10bdb19f55a894",
+      "bytes": 67084
+    },
+    "lagged_btc_alternative.jsonl": {
+      "sha256": "f8311bd740b6fa678c2be34f6fa3b65e742245711ace03ea299829f501e241e7",
+      "bytes": 66420
+    },
+    "run.log": {
+      "sha256": "314d48228ed55aeb7293c12342c04ad0d089189d02d8b87c9f3e2b9591cba064",
+      "bytes": 1822300
+    }
+  },
+  "scenarios": {
+    "independent_null": {
+      "n": 200,
+      "positive": 2,
+      "rate": 0.01,
+      "mean_delta": -8.077857449870915e-06,
+      "exact_95_binomial_ci": [
+        0.0012133490137360304,
+        0.035654668397239776
+      ]
+    },
+    "common_factor_null": {
+      "n": 200,
+      "positive": 1,
+      "rate": 0.005,
+      "mean_delta": -8.027189342504701e-06,
+      "exact_95_binomial_ci": [
+        0.00012658102786701825,
+        0.02754189845720562
+      ]
+    },
+    "lagged_btc_alternative": {
+      "n": 200,
+      "positive": 200,
+      "rate": 1.0,
+      "mean_delta": 0.011909017308687134,
+      "exact_95_binomial_ci": [
+        0.9817246596448638,
+        1.0
+      ]
+    }
+  },
+  "limitations": [
+    "Synthetic calibration conditional on three specified data generating processes",
+    "Alternative in this run is strong; weak effects not independently calibrated",
+    "No independent blind market data test; no causal or trading profitability claim"
+  ]
+}
