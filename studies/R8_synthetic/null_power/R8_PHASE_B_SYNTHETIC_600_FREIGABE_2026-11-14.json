@@ -1,0 +1,11 @@
+{
+  "approved": true,
+  "scope": "R8_B_SYNTHETIC_600_ONLY",
+  "source_sha256": "6a8e3393952536706d6751d039577d21dd390bcab0107148275229e0221eddff",
+  "protocol_sha256": "b3284c6e92e1de529b300b51556990e6b2d8076f06c2685fead783a6bde49bff",
+  "runner_v2_sha256": "c67ded5c5d2812d20608ad9508ad6c6dc4d3efbee9708dbaa09dfa5ab67fe6f9",
+  "repetitions_per_scenario": 200,
+  "approved_for": "Only synthetic Phase-B calibration; no real-market data; no trading; no Phase-C approval",
+  "recorded_date": "2026-11-14",
+  "decision_basis": "R8 Phase-B audit and successful local preflight/smoke, per user request to proceed"
+}
