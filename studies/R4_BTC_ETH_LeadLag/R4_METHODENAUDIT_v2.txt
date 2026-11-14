@@ -1,0 +1,17 @@
+R4 METHODENAUDIT VERSION 2
+Vorversion vorhanden: PASS
+Ein primaerer Modellvergleich: PASS
+Chronologische Fenster definiert: PASS
+Modelle und Lags festgelegt: PASS
+Trainingslabel-Grenze definiert: PASS
+Statistik und Seed festgelegt: PASS
+Kein Blindtest behauptet: PASS
+
+OFFEN:
+- Frühere Versuche nicht vollständig inventarisiert
+- Eignung der 1%-Mindestwirkung nicht begründet
+- HAC/Bootstrap-Aussagekraft noch fachlich zu prüfen
+- Informationsverfügbarkeit ohne received_at begrenzt
+- Unabhängige Bestätigungsdaten fehlen
+
+STATUS: Keine Freigabe zur Ergebnismessung

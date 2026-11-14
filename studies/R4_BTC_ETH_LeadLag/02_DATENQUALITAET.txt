@@ -1,0 +1,22 @@
+=== BTC ===
+Kerzen: 200026
+Beginn: 2024-08-21 02:35:00+00:00
+Ende: 2026-07-16 15:20:00+00:00
+Duplikate: 0
+Fehlende 5m-Zeitpunkte: 0
+Ungültige Zeitstempel: 0
+Ungültige OHLC-Zeilen: 0
+
+=== ETH ===
+Kerzen: 200000
+Beginn: 2024-08-25 22:45:00+00:00
+Ende: 2026-07-21 09:20:00+00:00
+Duplikate: 0
+Fehlende 5m-Zeitpunkte: 0
+Ungültige Zeitstempel: 0
+Ungültige OHLC-Zeilen: 0
+
+=== BTC/ETH SYNCHRONISATION ===
+Gemeinsame Zeitpunkte: 198632
+Nur BTC: 1394
+Nur ETH: 1368

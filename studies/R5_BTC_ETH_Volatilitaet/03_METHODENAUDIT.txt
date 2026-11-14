@@ -1,0 +1,9 @@
+PASS 12 Kerzen entsprechen 60 Minuten
+PASS Prognoseabstand entspricht Zielhorizont
+PASS HAR-Fenster korrekt
+PASS Training vor Evaluation
+PASS Bootstrap definiert
+PASS Keine Parameteroptimierung
+PASS Kein Blindtest behauptet
+STATUS: SPEZIFIKATIONSKONTROLLE PASS
+OFFEN: Mathematische Implementierung, Bootstrap und Zeitgrenzen unabhängig testen.

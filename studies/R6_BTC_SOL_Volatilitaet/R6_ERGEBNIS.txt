@@ -1,0 +1,16 @@
+R6 BTC -> SOL VOLATILITAET
+STATUS: EXPLORATIV, KEIN BLINDTEST
+Prognosen: 11687
+Evaluationsmonate: 16
+Kalenderwochen: 71
+MSE B0: 1.184301525
+MSE B1: 0.6084824935
+MSE M1: 0.5996669577
+Relative MSE-Verbesserung: +1.44877 %
+95%-Bootstrap-Intervall: [+0.82896, +2.02375] %
+Clark-West HAC z: +12.5044
+Clark-West einseitig p: 3.53038e-36
+
+Keine Handelsprofitabilitaet nachgewiesen.
+Bootstrap-Inferenz approximativ.
+Keine nachtraegliche Parametersuche.

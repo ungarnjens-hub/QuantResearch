@@ -1,0 +1,12 @@
+PASS Trainingsdaten vorhanden
+PASS Testdaten vorhanden
+PASS HAR-Fenster korrekt
+PASS 60m-Ziel korrekt
+PASS Prognosen stuendlich
+PASS Stundenende korrekt
+PASS Kein Labeluebergriff
+PASS Mindestens vier Testwochen
+PASS Bootstrap nicht leer
+PASS Bootstrap reproduzierbar
+PASS Bootstrap endliche Werte
+STATUS: PASS

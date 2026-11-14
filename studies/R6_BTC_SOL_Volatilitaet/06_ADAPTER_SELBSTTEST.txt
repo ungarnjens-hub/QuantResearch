@@ -1,0 +1,11 @@
+PASS Prognosen vorhanden
+PASS Stundenende UTC
+PASS Ziel erst nach 65 Minuten verfügbar
+PASS SOL-Ziel 60 Minuten korrekt
+PASS SOL-HAR-2016 korrekt
+PASS Keine BTC-Zukunftsinformation
+PASS Keine SOL-Zukunftsinformation
+PASS Training und Test vorhanden
+PASS Trainingslabels vor Testbeginn
+STATUS: PASS
+Nur synthetische Daten, keine Marktergebnisse.

@@ -1,0 +1,37 @@
+R5 UNABHÄNGIGE REPRODUKTION (EXPLORATIV)
+Nur vorab definierte Modelle, keine Parameter- oder Ergebnissuche.
+Verfahrensabweichung: RV-Fenster mittels NumPy-Kumulativsummen; OLS via SciPy.
+Referenzwerte aus dem ursprünglichen R5-Bericht:
+
+n: neu=11687; original=11687; PASS
+weeks: neu=71; original=71; PASS
+mse0: neu=1.40863224749; original=1.408632247; PASS
+mse1: neu=0.736429331435; original=0.7364293314; PASS
+mse2: neu=0.726158271905; original=0.7261582719; PASS
+improvement: neu=1.39471081491; original=1.39471; PASS
+ci_low: neu=0.923261250166; original=0.92326; PASS
+ci_high: neu=1.8868564657; original=1.88686; PASS
+cw_z: neu=12.3259395191; original=12.3259; PASS
+cw_p: neu=3.28367813861e-35; original=3.28368e-35; PASS
+
+Monate (UTC):
+2025-03-01: 744 Prognosen
+2025-04-01: 720 Prognosen
+2025-05-01: 744 Prognosen
+2025-06-01: 720 Prognosen
+2025-07-01: 744 Prognosen
+2025-08-01: 744 Prognosen
+2025-09-01: 720 Prognosen
+2025-10-01: 744 Prognosen
+2025-11-01: 720 Prognosen
+2025-12-01: 744 Prognosen
+2026-01-01: 744 Prognosen
+2026-02-01: 672 Prognosen
+2026-03-01: 744 Prognosen
+2026-04-01: 720 Prognosen
+2026-05-01: 744 Prognosen
+2026-06-01: 719 Prognosen
+
+Alle Vergleichswerte innerhalb der festgelegten numerischen Toleranz: JA
+Kein neuer Blindtest. Keine Aussage zur Handelsprofitabilität.
+Eine Übereinstimmung der aggregierten Werte ersetzt keinen zeilenweisen Vergleich mit den Originalprognosen.

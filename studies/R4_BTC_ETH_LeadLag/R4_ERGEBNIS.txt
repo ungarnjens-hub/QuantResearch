@@ -1,0 +1,36 @@
+R4 BTC-ETH LEAD-LAG | EXPLORATIVE FORSCHUNG
+Kein unabhängiger Blindtest; keine Handelsprofitabilität.
+Prognosen: 140255
+Evaluationsmonate: 16
+Kalenderwochen: 71
+MSE B0: 4.48978614369e-06
+MSE B1: 4.49011143392e-06
+MSE M1: 4.49084808444e-06
+Delta B1-M1: -7.36650518717e-10
+Relative MSE-Verbesserung: -0.01641 %
+95%-Blockbootstrap-Intervall: [-0.07213, +0.01706] %
+Clark-West HAC z: -0.2835
+Clark-West einseitig p (asymptotisch): 0.611599
+
+Monat | N | MSE B1 | MSE M1
+2025-03-01 | 8928 | 6.34966699e-06 | 6.34764387e-06
+2025-04-01 | 8640 | 6.07097013e-06 | 6.07152306e-06
+2025-05-01 | 8928 | 5.47552872e-06 | 5.47878114e-06
+2025-06-01 | 8640 | 4.13331405e-06 | 4.13139346e-06
+2025-07-01 | 8928 | 3.6047272e-06 | 3.60393045e-06
+2025-08-01 | 8928 | 4.61915192e-06 | 4.61946879e-06
+2025-09-01 | 8640 | 2.27359827e-06 | 2.27285836e-06
+2025-10-01 | 8928 | 5.80115019e-06 | 5.81726837e-06
+2025-11-01 | 8640 | 6.23761287e-06 | 6.23600172e-06
+2025-12-01 | 8928 | 3.57402866e-06 | 3.57483377e-06
+2026-01-01 | 8928 | 2.9233413e-06 | 2.92218219e-06
+2026-02-01 | 8064 | 8.12980447e-06 | 8.13020825e-06
+2026-03-01 | 8928 | 4.61674058e-06 | 4.61455996e-06
+2026-04-01 | 8640 | 2.32915002e-06 | 2.32929708e-06
+2026-05-01 | 8928 | 1.48540621e-06 | 1.48502441e-06
+2026-06-01 | 8639 | 4.52561706e-06 | 4.52635393e-06
+
+Bewertung: Explorativ, historisch bereits betrachtete Daten.
+Bootstrap berücksichtigt Zeitabhängigkeit nur approximativ.
+CW-Inferenz ist ergänzend und asymptotisch.
+Keine zusätzliche Parametersuche nach dieser Auswertung.

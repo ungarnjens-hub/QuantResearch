@@ -1,0 +1,16 @@
+R4 - FORSCHUNGSABSCHLUSS
+Datum: 2026-11-14
+Status: EXPLORATIV NICHT BESTAETIGT
+
+140255 OOS-Prognosen, 16 Monate.
+Relative MSE-Verbesserung: -0.01641%
+95%-Blockbootstrap: [-0.07213%, +0.01706%]
+Clark-West p (einseitig): 0.611599
+
+Kein nachgewiesener zusaetzlicher Prognosewert
+der drei BTC-Lags gegenueber ETH-AR(3).
+Kein unabhaengiger Blindtest.
+Keine Aussage zur Trading-Profitabilitaet.
+
+Forschungsfamilie geschlossen.
+Keine nachtraegliche Parameteroptimierung.

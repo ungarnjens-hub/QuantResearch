@@ -1,0 +1,16 @@
+R5 BTC -> ETH VOLATILITAET
+STATUS: EXPLORATIV, KEIN BLINDTEST
+Prognosen: 11687
+Evaluationsmonate: 16
+Kalenderwochen: 71
+MSE B0: 1.408632247
+MSE B1: 0.7364293314
+MSE M1: 0.7261582719
+Relative MSE-Verbesserung: +1.39471 %
+95%-Bootstrap-Intervall: [+0.92326, +1.88686] %
+Clark-West HAC z: +12.3259
+Clark-West einseitig p: 3.28368e-35
+
+Keine Handelsprofitabilitaet nachgewiesen.
+Bootstrap-Inferenz approximativ.
+Keine nachtraegliche Parametersuche.

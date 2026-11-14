@@ -1,0 +1,8 @@
+PASS Zeitliche Trennung
+PASS Feature-Label-Ausrichtung
+PASS Mindestens vier Kalenderwochen
+PASS Unterschiedliche Wochenlaengen
+PASS Bootstrap reproduzierbar
+PASS Bootstrap finite Werte
+PASS Kuenstlicher BTC-Effekt erkannt
+STATUS: PASS

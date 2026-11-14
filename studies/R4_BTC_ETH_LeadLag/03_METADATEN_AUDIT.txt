@@ -1,0 +1,26 @@
+
+=== BTC ===
+exchange: {'binance': 200026}
+market_type: {'perpetual': 200026}
+contract_type: {'linear': 200026}
+timeframe: {'5m': 200026}
+price_source: {'last_trade': 200026}
+is_closed: {'True': 200026}
+source_endpoint: {'/fapi/v1/klines': 200026}
+schema_version: {'1.0': 200026}
+Kerzendauer in Sekunden: {299.999: 200026}
+Ungültige Kerzendauer: 0
+Ungültige Empfangszeitpunkte: 200026
+
+=== ETH ===
+exchange: {'binance': 200000}
+market_type: {'perpetual': 200000}
+contract_type: {'linear': 200000}
+timeframe: {'5m': 200000}
+price_source: {'last_trade': 200000}
+is_closed: {'True': 200000}
+source_endpoint: {'/fapi/v1/klines': 200000}
+schema_version: {'1.0': 200000}
+Kerzendauer in Sekunden: {299.999: 200000}
+Ungültige Kerzendauer: 0
+Ungültige Empfangszeitpunkte: 200000

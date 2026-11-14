@@ -1,0 +1,11 @@
+R6 SOL-HERKUNFTSENTSCHEIDUNG
+
+Download-Kopie: VORHANDEN
+SHA256: e2b4c01551a33b292a3419a3379437df4d9f67d9073629da3ac23e1f8aa3a7ae
+Forschungs-Kopie: VORHANDEN
+SHA256: e2b4c01551a33b292a3419a3379437df4d9f67d9073629da3ac23e1f8aa3a7ae
+Manifest und Dateikopien: PASS
+Urspruenglicher Binance-Abruf: NICHT DIREKT BELEGT
+Preisquelle: Futures-OHLCV, Last-Trade-Annahme
+Status: Herkunft intern verifiziert, externe Herkunft eingeschraenkt
+R6-Ergebnismessung: NOCH NICHT FREIGEGEBEN

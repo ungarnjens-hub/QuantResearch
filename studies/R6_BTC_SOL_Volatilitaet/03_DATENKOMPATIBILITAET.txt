@@ -1,0 +1,24 @@
+R6 DATENKOMPATIBILITAET
+SOL date Datentyp: datetime64[us, UTC]
+BTC open_time Datentyp: datetime64[us, UTC]
+
+SOL erste 3 Zeilen:
+                     date   close
+2024-08-25 00:00:00+00:00 160.216
+2024-08-25 00:05:00+00:00 159.943
+2024-08-25 00:10:00+00:00 160.129
+
+BTC erste 3 Zeilen:
+                open_time    close price_source market_type
+2024-08-21 02:35:00+00:00 59324.00   last_trade   perpetual
+2024-08-21 02:40:00+00:00 59365.00   last_trade   perpetual
+2024-08-21 02:45:00+00:00 59433.30   last_trade   perpetual
+
+SOL Dateiname: SOL_USDT_USDT-5m-futures.parquet
+SOL Format: Freqtrade-artiges Futures-OHLCV
+SOL Preisquellen-Metadaten: nicht vorhanden
+BTC Preisquelle: last_trade
+
+OFFEN: SOL date-Semantik und Preisquelle
+anhand der Erzeugungsdokumentation bestaetigen.
+Keine Prognosemessung durchgefuehrt.

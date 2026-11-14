@@ -1,0 +1,26 @@
+R6 METHODENAUDIT - PHASE B
+
+PASS Protokoll unveraendert: 00_FORSCHUNGSREGISTER.md
+PASS Protokoll unveraendert: 01_FORSCHUNGSDESIGN.md
+PASS R5-Referenzprotokoll vorhanden
+PASS SOL-Quelldatei vorhanden
+PASS BTC-Dateien vorhanden
+SOL-Zeilen laut Metadaten: 198720
+SOL-Spalten: ['date', 'open', 'high', 'low', 'close', 'volume']
+SOL-Dateigroesse: 4799842 Bytes
+SOL-SHA256: e2b4c01551a33b292a3419a3379437df4d9f67d9073629da3ac23e1f8aa3a7ae
+BTC-Spalten: ['open_time', 'close_time', 'open', 'high', 'low', 'close', 'is_closed', 'exchange', 'exchange_symbol', 'canonical_symbol', 'market_type', 'contract_type', 'timeframe', 'price_source', 'data_family', 'downloaded_at', 'source_endpoint', 'schema_version', 'normalization_version', 'volume_base', 'volume_quote', 'volume_contracts', 'trade_count', 'taker_buy_volume_base', 'taker_buy_volume_quote', 'taker_buy_volume_contracts', 'raw_open_time', 'raw_close_time', 'source_sequence', 'source_record_id', 'received_at']
+
+R5-Referenz: 60m RV, HAR 12/288/2016,
+monatliches Walk-Forward, log-MSE.
+R6: gleiche Methodik vorgesehen.
+
+BEKANNTE EINSCHRAENKUNGEN:
+- SOL-Datenquelle ist getrennt von BTC.
+- Semantische Preisquellen-Gleichheit pruefen.
+- SOL-Daten wurden bereits in R3 untersucht.
+- Historische Daten sind kein neuer Blindtest.
+- Keine erneute Parameterauswahl anhand R5.
+
+STATUS: Technische Vorpruefung ohne Fehlstellen
+Keine Freigabe zur Ergebnismessung.
