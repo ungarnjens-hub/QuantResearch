@@ -1,0 +1,56 @@
+{
+  "kind": "R7 Phase-B SYNTHETIC, not market evidence",
+  "temporal_allowed_forecasts": 2159,
+  "five_minute_pipeline": {
+    "forecasts": 2159,
+    "monthly_training_test": [
+      [
+        "2027-01-01",
+        10055,
+        744
+      ],
+      [
+        "2027-02-01",
+        10799,
+        672
+      ],
+      [
+        "2027-03-01",
+        11471,
+        743
+      ]
+    ],
+    "finite": true,
+    "times_pass": true
+  },
+  "simulations": {
+    "null": {
+      "runs": 240,
+      "beta": 0.0,
+      "positive_ci_rate": 0.004166666666666667,
+      "positive_point_gain_rate": 0.32083333333333336,
+      "mean_gain_pct": -0.04127964270344617,
+      "median_gain_pct": -0.03751930059477767,
+      "ci_lower_5_95": [
+        -0.4610354149692698,
+        -0.0422860215739352
+      ],
+      "hac_positive_rate": 0.029166666666666667
+    },
+    "alternative": {
+      "runs": 240,
+      "beta": 0.35,
+      "positive_ci_rate": 1.0,
+      "positive_point_gain_rate": 1.0,
+      "mean_gain_pct": 20.498641526988212,
+      "median_gain_pct": 20.535594261815223,
+      "ci_lower_5_95": [
+        11.49001580391547,
+        20.653255126621183
+      ],
+      "hac_positive_rate": 1.0
+    }
+  },
+  "interpretation": "One full synthetic 5m HAR/realized-volatility pipeline + separate partial Monte Carlo calibration with 240 hourly nested-model simulations per scenario. Simulation does not replicate full RV price DGP and nominal error coverage is not proven.",
+  "decision": "No Phase C approval; complete 5m end-to-end synthetic gate and inference-method audit still required."
+}
