@@ -1,0 +1,65 @@
+{
+  "kind": "SYNTHETIC_ONLY_PHASE_B_NOT_MARKET_EVIDENCE",
+  "seed": 20261114,
+  "scenarios": [
+    "independent_null",
+    "shared_factor",
+    "btc_lead_weak"
+  ],
+  "replications_per_scenario": 80,
+  "bootstrap_draws": 5000,
+  "block_days": 7,
+  "hac_daily_lags": 7,
+  "forecast_count_each": 2159,
+  "simulation_design": {
+    "independent_null": "Independent BTC volatility and returns; ETH/SOL joint shocks",
+    "shared_factor": "Common persistent stochastic log-vol factor and return shocks; no imposed lagged BTC-specific effect",
+    "btc_lead_weak": "Shared factor plus 12-bar lagged BTC-idiosyncratic logvol loading 0.10 in ETH",
+    "limitation": "Shared-factor scenario may legitimately contain conditional BTC predictive signal; its positive rate is NOT an empirical type-I error rate."
+  },
+  "result": {
+    "independent_null": {
+      "n": 80,
+      "compound_gate_positives": 1,
+      "compound_gate_rate": 0.0125,
+      "exact_binomial_95pct_rate_ci": [
+        0.00031642252742346223,
+        0.06768778446392222
+      ],
+      "mean_gain_pct": -0.07999118075102629,
+      "median_gain_pct": -0.06137942910453609,
+      "pct_negative_gain": 0.6875,
+      "mean_ci_lower": -0.3410773156267754,
+      "p_hac_lt_05_rate": 0.025
+    },
+    "shared_factor": {
+      "n": 80,
+      "compound_gate_positives": 70,
+      "compound_gate_rate": 0.875,
+      "exact_binomial_95pct_rate_ci": [
+        0.7821108659305637,
+        0.9383979034415858
+      ],
+      "mean_gain_pct": 2.403183399203036,
+      "median_gain_pct": 2.4156526452315883,
+      "pct_negative_gain": 0.0125,
+      "mean_ci_lower": 0.919126783718664,
+      "p_hac_lt_05_rate": 0.925
+    },
+    "btc_lead_weak": {
+      "n": 80,
+      "compound_gate_positives": 78,
+      "compound_gate_rate": 0.975,
+      "exact_binomial_95pct_rate_ci": [
+        0.9125928440694057,
+        0.9969579138352488
+      ],
+      "mean_gain_pct": 3.695279967545818,
+      "median_gain_pct": 3.764396522210031,
+      "pct_negative_gain": 0.0,
+      "mean_ci_lower": 1.9291475048673745,
+      "p_hac_lt_05_rate": 0.975
+    }
+  },
+  "decision": "Diagnostic only. No Phase C authorization, no claim of general nominal coverage."
+}
