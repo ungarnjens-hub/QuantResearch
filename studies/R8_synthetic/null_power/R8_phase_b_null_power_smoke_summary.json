@@ -1,0 +1,45 @@
+{
+  "status": "SYNTHETIC_ONLY",
+  "mode": "smoke",
+  "source_sha256": "6a8e3393952536706d6751d039577d21dd390bcab0107148275229e0221eddff",
+  "script_sha256": "f2cd2d3700a23b14b2fc5b424347c0fbebfc116101d078895d58ae3075fd4975",
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0"
+  },
+  "n_per_scenario": 1,
+  "scenarios": {
+    "independent_null": {
+      "n": 1,
+      "positive_gate_n": 0,
+      "positive_gate_rate": 0.0,
+      "exact_95_binomial_ci": [
+        0.0,
+        0.975
+      ],
+      "mean_delta": -2.6673385769775262e-05
+    },
+    "common_factor_null": {
+      "n": 1,
+      "positive_gate_n": 0,
+      "positive_gate_rate": 0.0,
+      "exact_95_binomial_ci": [
+        0.0,
+        0.975
+      ],
+      "mean_delta": 4.379348690250273e-05
+    },
+    "lagged_btc_alternative": {
+      "n": 1,
+      "positive_gate_n": 1,
+      "positive_gate_rate": 1.0,
+      "exact_95_binomial_ci": [
+        0.025,
+        1.0
+      ],
+      "mean_delta": 0.012150063003078387
+    }
+  },
+  "phase_c_approved": false
+}
