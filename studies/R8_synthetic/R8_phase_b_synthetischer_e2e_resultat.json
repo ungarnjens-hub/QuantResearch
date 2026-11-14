@@ -1,0 +1,65 @@
+{
+  "status": "SYNTHETIC_ONLY_NO_MARKET_MEASUREMENT",
+  "seed": 20261114,
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "sklearn": "1.8.0"
+  },
+  "unit_checks": [
+    "open_time_to_close_time",
+    "latest_complete_feature",
+    "target_next_closed_candle",
+    "label_known_only_next_close",
+    "3_lags_require_history",
+    "zero_label_is_NA_not_negative",
+    "missing_candle_rejected",
+    "duplicate_rejected",
+    "naive_time_rejected",
+    "only_one_class_rejected",
+    "constant_feature_rejected"
+  ],
+  "training_candles": 210240,
+  "test_candles": 26208,
+  "excluded_reserved_window": "2027-01-01/2027-04-01",
+  "refits": [
+    {
+      "refit": "2027-04-01 00:00:00+00:00",
+      "training_n": 208069,
+      "max_label_available": "2027-01-01 00:00:00+00:00",
+      "forecast_n": 8636,
+      "first": "2027-04-01 00:20:00+00:00",
+      "last": "2027-04-30 23:55:00+00:00"
+    },
+    {
+      "refit": "2027-05-01 00:00:00+00:00",
+      "training_n": 216616,
+      "max_label_available": "2027-05-01 00:00:00+00:00",
+      "forecast_n": 8928,
+      "first": "2027-05-01 00:00:00+00:00",
+      "last": "2027-05-31 23:55:00+00:00"
+    },
+    {
+      "refit": "2027-06-01 00:00:00+00:00",
+      "training_n": 225452,
+      "max_label_available": "2027-06-01 00:00:00+00:00",
+      "forecast_n": 8640,
+      "first": "2027-06-01 00:00:00+00:00",
+      "last": "2027-06-30 23:55:00+00:00"
+    }
+  ],
+  "all_predictions": 26204,
+  "scored_nonzero": 25934,
+  "zero_future_returns": 270,
+  "logloss_b0": 0.6931491811799304,
+  "logloss_b1": 0.6931556952782176,
+  "logloss_m1": 0.6931618799726229,
+  "delta_b1_minus_m1": -6.1846944052582775e-06,
+  "bootstrap_95ci_delta": [
+    -2.3163732397609565e-05,
+    5.997101591928377e-06
+  ],
+  "null_calibration_performed": false,
+  "market_test_approved": false,
+  "script_sha256": "6a8e3393952536706d6751d039577d21dd390bcab0107148275229e0221eddff"
+}
