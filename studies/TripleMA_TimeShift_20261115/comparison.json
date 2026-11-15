@@ -1,0 +1,206 @@
+{
+  "period": "2020–Oktober 2026",
+  "method": "1h-only historical exploratory",
+  "years": {
+    "2020": {
+      "V1": {
+        "trades": 89,
+        "wins": 21,
+        "win_rate_pct": 23.6,
+        "net_usdt": 17.75465,
+        "profit_factor": 1.24201,
+        "closed_trade_drawdown_usdt": 32.24797,
+        "long_net_usdt": 26.53176,
+        "short_net_usdt": -8.77711,
+        "top3_winners_usdt": 40.92958
+      },
+      "V2": {
+        "trades": 64,
+        "wins": 13,
+        "win_rate_pct": 20.31,
+        "net_usdt": 5.03466,
+        "profit_factor": 1.09014,
+        "closed_trade_drawdown_usdt": 28.80737,
+        "long_net_usdt": 11.69526,
+        "short_net_usdt": -6.6606,
+        "top3_winners_usdt": 40.92958
+      },
+      "delta_net_usdt": -12.71999
+    },
+    "2021": {
+      "V1": {
+        "trades": 90,
+        "wins": 24,
+        "win_rate_pct": 26.67,
+        "net_usdt": 29.88822,
+        "profit_factor": 1.42874,
+        "closed_trade_drawdown_usdt": 21.82079,
+        "long_net_usdt": 29.71465,
+        "short_net_usdt": 0.17358,
+        "top3_winners_usdt": 40.88308
+      },
+      "V2": {
+        "trades": 69,
+        "wins": 12,
+        "win_rate_pct": 17.39,
+        "net_usdt": -0.71896,
+        "profit_factor": 0.98815,
+        "closed_trade_drawdown_usdt": 20.00827,
+        "long_net_usdt": 6.93314,
+        "short_net_usdt": -7.6521,
+        "top3_winners_usdt": 35.49548
+      },
+      "delta_net_usdt": -30.60718
+    },
+    "2022": {
+      "V1": {
+        "trades": 59,
+        "wins": 9,
+        "win_rate_pct": 15.25,
+        "net_usdt": -21.37081,
+        "profit_factor": 0.53743,
+        "closed_trade_drawdown_usdt": 21.37081,
+        "long_net_usdt": -2.63305,
+        "short_net_usdt": -18.73776,
+        "top3_winners_usdt": 17.73678
+      },
+      "V2": {
+        "trades": 44,
+        "wins": 7,
+        "win_rate_pct": 15.91,
+        "net_usdt": -21.23618,
+        "profit_factor": 0.43999,
+        "closed_trade_drawdown_usdt": 21.23618,
+        "long_net_usdt": -5.39261,
+        "short_net_usdt": -15.84358,
+        "top3_winners_usdt": 13.63112
+      },
+      "delta_net_usdt": 0.13463
+    },
+    "2023": {
+      "V1": {
+        "trades": 82,
+        "wins": 16,
+        "win_rate_pct": 19.51,
+        "net_usdt": 28.71249,
+        "profit_factor": 1.86917,
+        "closed_trade_drawdown_usdt": 16.59501,
+        "long_net_usdt": 36.00628,
+        "short_net_usdt": -7.29379,
+        "top3_winners_usdt": 39.59326
+      },
+      "V2": {
+        "trades": 67,
+        "wins": 14,
+        "win_rate_pct": 20.9,
+        "net_usdt": 33.4294,
+        "profit_factor": 2.2674,
+        "closed_trade_drawdown_usdt": 15.41648,
+        "long_net_usdt": 40.55792,
+        "short_net_usdt": -7.12852,
+        "top3_winners_usdt": 39.59326
+      },
+      "delta_net_usdt": 4.71691
+    },
+    "2024": {
+      "V1": {
+        "trades": 84,
+        "wins": 23,
+        "win_rate_pct": 27.38,
+        "net_usdt": 8.80346,
+        "profit_factor": 1.21488,
+        "closed_trade_drawdown_usdt": 8.91421,
+        "long_net_usdt": 4.17149,
+        "short_net_usdt": 4.63196,
+        "top3_winners_usdt": 21.25138
+      },
+      "V2": {
+        "trades": 58,
+        "wins": 17,
+        "win_rate_pct": 29.31,
+        "net_usdt": 10.73008,
+        "profit_factor": 1.39199,
+        "closed_trade_drawdown_usdt": 8.01833,
+        "long_net_usdt": 8.13984,
+        "short_net_usdt": 2.59024,
+        "top3_winners_usdt": 21.25138
+      },
+      "delta_net_usdt": 1.92662
+    },
+    "2025": {
+      "V1": {
+        "trades": 73,
+        "wins": 21,
+        "win_rate_pct": 28.77,
+        "net_usdt": 10.36561,
+        "profit_factor": 1.28564,
+        "closed_trade_drawdown_usdt": 12.01564,
+        "long_net_usdt": 7.24739,
+        "short_net_usdt": 3.11821,
+        "top3_winners_usdt": 19.32169
+      },
+      "V2": {
+        "trades": 45,
+        "wins": 16,
+        "win_rate_pct": 35.56,
+        "net_usdt": 22.70243,
+        "profit_factor": 2.19784,
+        "closed_trade_drawdown_usdt": 6.0838,
+        "long_net_usdt": 17.14294,
+        "short_net_usdt": 5.55949,
+        "top3_winners_usdt": 19.32169
+      },
+      "delta_net_usdt": 12.33682
+    },
+    "2026": {
+      "V1": {
+        "trades": 58,
+        "wins": 17,
+        "win_rate_pct": 29.31,
+        "net_usdt": 14.2647,
+        "profit_factor": 1.64049,
+        "closed_trade_drawdown_usdt": 5.37996,
+        "long_net_usdt": 13.035,
+        "short_net_usdt": 1.22969,
+        "top3_winners_usdt": 24.36666
+      },
+      "V2": {
+        "trades": 45,
+        "wins": 15,
+        "win_rate_pct": 33.33,
+        "net_usdt": 19.06405,
+        "profit_factor": 2.21783,
+        "closed_trade_drawdown_usdt": 4.65003,
+        "long_net_usdt": 14.11506,
+        "short_net_usdt": 4.94899,
+        "top3_winners_usdt": 24.36666
+      },
+      "delta_net_usdt": 4.79935
+    }
+  },
+  "overall": {
+    "V1": {
+      "trades": 535,
+      "wins": 131,
+      "win_rate_pct": 24.49,
+      "net_usdt": 88.41831,
+      "profit_factor": 1.27473,
+      "closed_trade_drawdown_usdt": 34.23618,
+      "long_net_usdt": 114.07353,
+      "short_net_usdt": -25.65522,
+      "top3_winners_usdt": 49.06737
+    },
+    "V2": {
+      "trades": 392,
+      "wins": 94,
+      "win_rate_pct": 23.98,
+      "net_usdt": 69.00548,
+      "profit_factor": 1.28422,
+      "closed_trade_drawdown_usdt": 37.36847,
+      "long_net_usdt": 93.19156,
+      "short_net_usdt": -24.18608,
+      "top3_winners_usdt": 49.06737
+    },
+    "delta_net_usdt": -19.41283
+  }
+}

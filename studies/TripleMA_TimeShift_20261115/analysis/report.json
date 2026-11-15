@@ -1,0 +1,191 @@
+{
+  "source": "/home/icom/QuantResearch/TripleMA_AB_ThreeFilters_Exploratory_V3",
+  "research_status": "EXPLORATORY: 2026 period already reused, no fresh validation",
+  "scope": "Two historical A/B strategy outputs; existing files read-only",
+  "periods": {
+    "development": {
+      "V1": {
+        "trades": 115,
+        "net_usdt": 23.0044,
+        "profit_factor": 1.4053,
+        "win_rate_pct": 26.96,
+        "max_closed_trade_dd_usdt": 12.0429,
+        "largest_win_usdt": 9.7476,
+        "largest_loss_usdt": -2.8748,
+        "top_3_winners_usdt": 24.6694,
+        "top_3_share_of_gross_gains_pct": 30.93,
+        "net_without_top_3_winners_usdt": -1.665,
+        "median_trade_usdt": -0.4979,
+        "mean_holding_hours": 21.62,
+        "by_direction": {
+          "long": {
+            "n": 81,
+            "net_usdt": 16.9108,
+            "wins": 21
+          },
+          "short": {
+            "n": 34,
+            "net_usdt": 6.0936,
+            "wins": 10
+          }
+        },
+        "freqtrade_max_drawdown_abs": 12.04293932,
+        "freqtrade_max_drawdown_account": 0.0012025114307549758
+      },
+      "V2": {
+        "trades": 75,
+        "net_usdt": 39.9657,
+        "profit_factor": 2.2635,
+        "win_rate_pct": 33.33,
+        "max_closed_trade_dd_usdt": 6.0949,
+        "largest_win_usdt": 9.7476,
+        "largest_loss_usdt": -1.4459,
+        "top_3_winners_usdt": 24.6694,
+        "top_3_share_of_gross_gains_pct": 34.46,
+        "net_without_top_3_winners_usdt": 15.2964,
+        "median_trade_usdt": -0.4119,
+        "mean_holding_hours": 24.51,
+        "by_direction": {
+          "long": {
+            "n": 56,
+            "net_usdt": 28.7012,
+            "wins": 18
+          },
+          "short": {
+            "n": 19,
+            "net_usdt": 11.2646,
+            "wins": 7
+          }
+        },
+        "freqtrade_max_drawdown_abs": 6.094882249999998,
+        "freqtrade_max_drawdown_account": 0.0006083162478806438
+      },
+      "delta_net_usdt": 16.9613,
+      "trade_comparison": {
+        "shared_entry_times": 75,
+        "shared_but_different_outcomes": 0,
+        "v1_only_entries": 40,
+        "v1_only_net_usdt": -16.9614,
+        "v2_only_entries": 0,
+        "v2_only_net_usdt": 0,
+        "common_outcome_difference_usdt": 0.0,
+        "v1_only_by_open_time": {
+          "monday": 19,
+          "long_05_07_utc": 17,
+          "short_14_utc": 11,
+          "other": 0
+        },
+        "v2_only_by_open_time": {
+          "monday": 0,
+          "long_05_07_utc": 0,
+          "short_14_utc": 0,
+          "other": 0
+        },
+        "changed_common_examples": []
+      },
+      "weekly_sensitivity": {
+        "weeks": 78,
+        "weeks_v2_better": 27,
+        "weeks_v1_better": 6,
+        "weeks_tied": 45,
+        "paired_week_resampling_total_delta_95pct_usdt": [
+          3.4402,
+          30.3014
+        ],
+        "method": "Exploratory iid resampling of calendar-week PnL differences, 5000 draws; serial dependence not fully modeled"
+      }
+    },
+    "validation_reused": {
+      "V1": {
+        "trades": 31,
+        "net_usdt": 8.1742,
+        "profit_factor": 1.6212,
+        "win_rate_pct": 35.48,
+        "max_closed_trade_dd_usdt": 3.4755,
+        "largest_win_usdt": 8.9427,
+        "largest_loss_usdt": -1.2095,
+        "top_3_winners_usdt": 14.3245,
+        "top_3_share_of_gross_gains_pct": 67.15,
+        "net_without_top_3_winners_usdt": -6.1504,
+        "median_trade_usdt": -0.4434,
+        "mean_holding_hours": 19.4,
+        "by_direction": {
+          "long": {
+            "n": 16,
+            "net_usdt": 4.8336,
+            "wins": 8
+          },
+          "short": {
+            "n": 15,
+            "net_usdt": 3.3406,
+            "wins": 3
+          }
+        },
+        "freqtrade_max_drawdown_abs": 3.4754849500000002,
+        "freqtrade_max_drawdown_account": 0.00034726760042168764
+      },
+      "V2": {
+        "trades": 23,
+        "net_usdt": 13.2343,
+        "profit_factor": 2.6343,
+        "win_rate_pct": 47.83,
+        "max_closed_trade_dd_usdt": 2.015,
+        "largest_win_usdt": 8.9427,
+        "largest_loss_usdt": -1.2095,
+        "top_3_winners_usdt": 14.3245,
+        "top_3_share_of_gross_gains_pct": 67.15,
+        "net_without_top_3_winners_usdt": -1.0902,
+        "median_trade_usdt": -0.3489,
+        "mean_holding_hours": 22.68,
+        "by_direction": {
+          "long": {
+            "n": 14,
+            "net_usdt": 6.1744,
+            "wins": 8
+          },
+          "short": {
+            "n": 9,
+            "net_usdt": 7.0599,
+            "wins": 3
+          }
+        },
+        "freqtrade_max_drawdown_abs": 2.0150115500000005,
+        "freqtrade_max_drawdown_account": 0.00020132138924390546
+      },
+      "delta_net_usdt": 5.0601,
+      "trade_comparison": {
+        "shared_entry_times": 23,
+        "shared_but_different_outcomes": 0,
+        "v1_only_entries": 8,
+        "v1_only_net_usdt": -5.0601,
+        "v2_only_entries": 0,
+        "v2_only_net_usdt": 0,
+        "common_outcome_difference_usdt": 0.0,
+        "v1_only_by_open_time": {
+          "monday": 3,
+          "long_05_07_utc": 2,
+          "short_14_utc": 5,
+          "other": 0
+        },
+        "v2_only_by_open_time": {
+          "monday": 0,
+          "long_05_07_utc": 0,
+          "short_14_utc": 0,
+          "other": 0
+        },
+        "changed_common_examples": []
+      },
+      "weekly_sensitivity": {
+        "weeks": 26,
+        "weeks_v2_better": 7,
+        "weeks_v1_better": 0,
+        "weeks_tied": 19,
+        "paired_week_resampling_total_delta_95pct_usdt": [
+          1.972,
+          8.6585
+        ],
+        "method": "Exploratory iid resampling of calendar-week PnL differences, 5000 draws; serial dependence not fully modeled"
+      }
+    }
+  }
+}

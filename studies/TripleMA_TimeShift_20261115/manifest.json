@@ -1,0 +1,26 @@
+{
+  "description": "Historical robustness A/B V1 vs frozen V2, no bot, exploratory",
+  "period": "2020-01-01 to 2026-10-31 UTC inclusive",
+  "execution_resolution": "1h ONLY because no complete 5m archive before Aug 2024",
+  "baseline_compatibility": "NOT DIRECTLY COMPARABLE to earlier 1h+5m results",
+  "original_reference_sha256": "d87eb0956e982846f23c1d906acd652f505fc5472a391f34902358f1acc0c3ef",
+  "original_config_sha256": "65c4fa9be60fbc3ae3d54978db653bc0f149bc0f313c9c066d8ed42c4cfa0c48",
+  "strategy_hashes": {
+    "TripleMA_BTC_V1_ATR15_Complementary_Hours": "26a0d9bc26244b10006b1228bbb70b4803fd75bd15e21393b87d6fa3bc23c05d",
+    "TripleMA_BTC_V1_ATR15_Complementary_Hours_NoMonday_Morning_Short14": "9f46bf47f4d9733a75dd5477fd64db797f65095cd88bc98ff85ca756991d2057"
+  },
+  "source_data_hashes": {
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2019_v1.0.parquet": "3a350cd37dbafd2d852215a168d4780afa888918739fecd31e28530ba41b9cdf",
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2020_v1.0.parquet": "761743e7a84990af19f9f93f8dc18c290396ff8258f492f5daa834e9bd46a7ad",
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2021_v1.0.parquet": "57fe1c90437c901684d967f81cf484a71c7cdbee61bd4cb35286c76b02c92faf",
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2022_v1.0.parquet": "9d16df1ae4093121de8ef5e2960617a0bb533cf9798288973087e3b65b0b14be",
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2023_v1.0.parquet": "e9f125ffe25e7b4411003462ad7dc4b23df897c1ba741a42541f52b6128b3a20",
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2024_v1.0.parquet": "af8dada4a98d71348fff802ce3cd1245199573966b41b0f04cd6f7eb05a94024",
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2025_v1.0.parquet": "c7d051b25b734e9efb93887d1f3322e8a2d2ecc908565815155ba0195510bab8",
+    "/home/icom/Dokumente/TradingLab/data/canonical/binance/perpetual/klines/BTC_USDT/1h/BTC_USDT_1h_2026_v1.0.parquet": "7ebd61aa23b04628c58fc7ef8efc72dba69f24b5e421137fdf8cf9393c470ad5",
+    "/home/icom/QuantResearch/Validation_2026_AugOct/data/BTC_USDT_5m_2026-07_2026-10.parquet": "fe4c4c9b347e70511db160ba026e3d1276905fe90eb3102b976761a11677dbff"
+  },
+  "derived_feather_sha256": "261e64f3935b76329c9079c078b9e149c97cd75958617b913e9b9d926d9f7b94",
+  "rows_1h": 62647,
+  "note": "Previously studied periods are not pristine out of sample. No mark/funding synthetic data created."
+}
