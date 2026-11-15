@@ -1,0 +1,73 @@
+{
+  "rules": {
+    "trend_slope_24h_min_pct": 0.1,
+    "recovery_oversold_atr_min": 3.0
+  },
+  "trades": 253,
+  "violations": [],
+  "groups": [
+    {
+      "tag": "trend",
+      "slope_group": "steigend",
+      "n": 115,
+      "losses": 83,
+      "wins": 32,
+      "pnl_usdt": 0.8166129200000003,
+      "examples": [
+        "2024-07-18 07:00:00+00:00",
+        "2024-07-19 14:00:00+00:00"
+      ]
+    },
+    {
+      "tag": "trend",
+      "slope_group": "nahe_horizontal",
+      "n": 0,
+      "losses": 0,
+      "wins": 0,
+      "pnl_usdt": 0.0,
+      "examples": []
+    },
+    {
+      "tag": "trend",
+      "slope_group": "fallend",
+      "n": 0,
+      "losses": 0,
+      "wins": 0,
+      "pnl_usdt": 0.0,
+      "examples": []
+    },
+    {
+      "tag": "recovery",
+      "slope_group": "steigend",
+      "n": 0,
+      "losses": 0,
+      "wins": 0,
+      "pnl_usdt": 0.0,
+      "examples": []
+    },
+    {
+      "tag": "recovery",
+      "slope_group": "nahe_horizontal",
+      "n": 5,
+      "losses": 3,
+      "wins": 2,
+      "pnl_usdt": 2.39109758,
+      "examples": [
+        "2024-12-03 22:00:00+00:00",
+        "2024-12-04 20:00:00+00:00"
+      ]
+    },
+    {
+      "tag": "recovery",
+      "slope_group": "fallend",
+      "n": 133,
+      "losses": 90,
+      "wins": 43,
+      "pnl_usdt": -17.39146214,
+      "examples": [
+        "2024-07-05 22:00:00+00:00",
+        "2024-07-06 07:00:00+00:00"
+      ]
+    }
+  ]
+}

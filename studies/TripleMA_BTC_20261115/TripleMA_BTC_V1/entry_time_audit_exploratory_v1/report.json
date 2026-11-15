@@ -1,0 +1,690 @@
+{
+  "qa": {
+    "source_sha256": "52db0cb1fe8ead0e78db5a54bf308fbb47370d3d99c877a4fa7f220a2179a9ab",
+    "trades": 253,
+    "baseline_pnl_usdt": -14.1838
+  },
+  "tables": {
+    "ALL: WEEKDAY UTC": [
+      {
+        "group": "Mo",
+        "n": 37,
+        "wins": 8,
+        "win_pct": 21.6,
+        "pnl_usdt": -15.325,
+        "avg_usdt": -0.4142,
+        "pf": 0.575
+      },
+      {
+        "group": "Di",
+        "n": 32,
+        "wins": 12,
+        "win_pct": 37.5,
+        "pnl_usdt": 6.9386,
+        "avg_usdt": 0.2168,
+        "pf": 1.335
+      },
+      {
+        "group": "Mi",
+        "n": 41,
+        "wins": 16,
+        "win_pct": 39.0,
+        "pnl_usdt": -2.1646,
+        "avg_usdt": -0.0528,
+        "pf": 0.915
+      },
+      {
+        "group": "Do",
+        "n": 26,
+        "wins": 9,
+        "win_pct": 34.6,
+        "pnl_usdt": -6.0035,
+        "avg_usdt": -0.2309,
+        "pf": 0.74
+      },
+      {
+        "group": "Fr",
+        "n": 38,
+        "wins": 16,
+        "win_pct": 42.1,
+        "pnl_usdt": -0.5857,
+        "avg_usdt": -0.0154,
+        "pf": 0.975
+      },
+      {
+        "group": "Sa",
+        "n": 27,
+        "wins": 4,
+        "win_pct": 14.8,
+        "pnl_usdt": 0.786,
+        "avg_usdt": 0.0291,
+        "pf": 1.073
+      },
+      {
+        "group": "So",
+        "n": 52,
+        "wins": 12,
+        "win_pct": 23.1,
+        "pnl_usdt": 2.1704,
+        "avg_usdt": 0.0417,
+        "pf": 1.087
+      }
+    ],
+    "ALL: UTC HOUR": [
+      {
+        "group": 0,
+        "n": 12,
+        "wins": 3,
+        "win_pct": 25.0,
+        "pnl_usdt": -3.1428,
+        "avg_usdt": -0.2619,
+        "pf": 0.461
+      },
+      {
+        "group": 1,
+        "n": 9,
+        "wins": 3,
+        "win_pct": 33.3,
+        "pnl_usdt": -3.0289,
+        "avg_usdt": -0.3365,
+        "pf": 0.409
+      },
+      {
+        "group": 2,
+        "n": 11,
+        "wins": 4,
+        "win_pct": 36.4,
+        "pnl_usdt": 4.1723,
+        "avg_usdt": 0.3793,
+        "pf": 1.778
+      },
+      {
+        "group": 3,
+        "n": 7,
+        "wins": 5,
+        "win_pct": 71.4,
+        "pnl_usdt": 7.3438,
+        "avg_usdt": 1.0491,
+        "pf": 7.046
+      },
+      {
+        "group": 4,
+        "n": 9,
+        "wins": 1,
+        "win_pct": 11.1,
+        "pnl_usdt": -2.7663,
+        "avg_usdt": -0.3074,
+        "pf": 0.497
+      },
+      {
+        "group": 5,
+        "n": 13,
+        "wins": 2,
+        "win_pct": 15.4,
+        "pnl_usdt": -1.4204,
+        "avg_usdt": -0.1093,
+        "pf": 0.767
+      },
+      {
+        "group": 6,
+        "n": 7,
+        "wins": 4,
+        "win_pct": 57.1,
+        "pnl_usdt": 7.705,
+        "avg_usdt": 1.1007,
+        "pf": 3.187
+      },
+      {
+        "group": 7,
+        "n": 19,
+        "wins": 6,
+        "win_pct": 31.6,
+        "pnl_usdt": 5.0186,
+        "avg_usdt": 0.2641,
+        "pf": 1.493
+      },
+      {
+        "group": 8,
+        "n": 9,
+        "wins": 4,
+        "win_pct": 44.4,
+        "pnl_usdt": -1.866,
+        "avg_usdt": -0.2073,
+        "pf": 0.799
+      },
+      {
+        "group": 9,
+        "n": 6,
+        "wins": 0,
+        "win_pct": 0.0,
+        "pnl_usdt": -4.5376,
+        "avg_usdt": -0.7563,
+        "pf": 0.0
+      },
+      {
+        "group": 10,
+        "n": 18,
+        "wins": 5,
+        "win_pct": 27.8,
+        "pnl_usdt": -8.7413,
+        "avg_usdt": -0.4856,
+        "pf": 0.411
+      },
+      {
+        "group": 11,
+        "n": 6,
+        "wins": 2,
+        "win_pct": 33.3,
+        "pnl_usdt": -0.0368,
+        "avg_usdt": -0.0061,
+        "pf": 0.989
+      },
+      {
+        "group": 12,
+        "n": 11,
+        "wins": 3,
+        "win_pct": 27.3,
+        "pnl_usdt": -7.1721,
+        "avg_usdt": -0.652,
+        "pf": 0.117
+      },
+      {
+        "group": 13,
+        "n": 9,
+        "wins": 1,
+        "win_pct": 11.1,
+        "pnl_usdt": -6.4425,
+        "avg_usdt": -0.7158,
+        "pf": 0.024
+      },
+      {
+        "group": 14,
+        "n": 12,
+        "wins": 4,
+        "win_pct": 33.3,
+        "pnl_usdt": -1.6332,
+        "avg_usdt": -0.1361,
+        "pf": 0.836
+      },
+      {
+        "group": 15,
+        "n": 7,
+        "wins": 1,
+        "win_pct": 14.3,
+        "pnl_usdt": -8.7995,
+        "avg_usdt": -1.2571,
+        "pf": 0.271
+      },
+      {
+        "group": 16,
+        "n": 16,
+        "wins": 5,
+        "win_pct": 31.2,
+        "pnl_usdt": -2.6972,
+        "avg_usdt": -0.1686,
+        "pf": 0.806
+      },
+      {
+        "group": 17,
+        "n": 9,
+        "wins": 4,
+        "win_pct": 44.4,
+        "pnl_usdt": 0.105,
+        "avg_usdt": 0.0117,
+        "pf": 1.016
+      },
+      {
+        "group": 18,
+        "n": 15,
+        "wins": 5,
+        "win_pct": 33.3,
+        "pnl_usdt": -1.722,
+        "avg_usdt": -0.1148,
+        "pf": 0.815
+      },
+      {
+        "group": 19,
+        "n": 8,
+        "wins": 1,
+        "win_pct": 12.5,
+        "pnl_usdt": -3.1979,
+        "avg_usdt": -0.3997,
+        "pf": 0.386
+      },
+      {
+        "group": 20,
+        "n": 10,
+        "wins": 5,
+        "win_pct": 50.0,
+        "pnl_usdt": 6.985,
+        "avg_usdt": 0.6985,
+        "pf": 3.182
+      },
+      {
+        "group": 21,
+        "n": 10,
+        "wins": 2,
+        "win_pct": 20.0,
+        "pnl_usdt": -4.6743,
+        "avg_usdt": -0.4674,
+        "pf": 0.299
+      },
+      {
+        "group": 22,
+        "n": 8,
+        "wins": 2,
+        "win_pct": 25.0,
+        "pnl_usdt": 4.9726,
+        "avg_usdt": 0.6216,
+        "pf": 2.096
+      },
+      {
+        "group": 23,
+        "n": 12,
+        "wins": 5,
+        "win_pct": 41.7,
+        "pnl_usdt": 11.3926,
+        "avg_usdt": 0.9494,
+        "pf": 4.163
+      }
+    ],
+    "ALL: FOUR FIXED UTC BLOCKS (not named market sessions)": [
+      {
+        "group": "00-05 UTC",
+        "n": 61,
+        "wins": 18,
+        "win_pct": 29.5,
+        "pnl_usdt": 1.1577,
+        "avg_usdt": 0.019,
+        "pf": 1.04
+      },
+      {
+        "group": "06-11 UTC",
+        "n": 65,
+        "wins": 21,
+        "win_pct": 32.3,
+        "pnl_usdt": -2.4581,
+        "avg_usdt": -0.0378,
+        "pf": 0.946
+      },
+      {
+        "group": "12-17 UTC",
+        "n": 64,
+        "wins": 18,
+        "win_pct": 28.1,
+        "pnl_usdt": -26.6394,
+        "avg_usdt": -0.4162,
+        "pf": 0.533
+      },
+      {
+        "group": "18-23 UTC",
+        "n": 63,
+        "wins": 20,
+        "win_pct": 31.7,
+        "pnl_usdt": 13.756,
+        "avg_usdt": 0.2183,
+        "pf": 1.423
+      }
+    ],
+    "ALL: WEEKDAY vs WEEKEND": [
+      {
+        "group": "weekday",
+        "n": 174,
+        "wins": 61,
+        "win_pct": 35.1,
+        "pnl_usdt": -17.1401,
+        "avg_usdt": -0.0985,
+        "pf": 0.867
+      },
+      {
+        "group": "weekend",
+        "n": 79,
+        "wins": 16,
+        "win_pct": 20.3,
+        "pnl_usdt": 2.9564,
+        "avg_usdt": 0.0374,
+        "pf": 1.083
+      }
+    ],
+    "ALL: YEAR": [
+      {
+        "group": 2024,
+        "n": 79,
+        "wins": 28,
+        "win_pct": 35.4,
+        "pnl_usdt": 15.2266,
+        "avg_usdt": 0.1927,
+        "pf": 1.359
+      },
+      {
+        "group": 2025,
+        "n": 174,
+        "wins": 49,
+        "win_pct": 28.2,
+        "pnl_usdt": -29.4104,
+        "avg_usdt": -0.169,
+        "pf": 0.759
+      }
+    ],
+    "ALL: TAG": [
+      {
+        "group": "recovery",
+        "n": 138,
+        "wins": 45,
+        "win_pct": 32.6,
+        "pnl_usdt": -15.0004,
+        "avg_usdt": -0.1087,
+        "pf": 0.839
+      },
+      {
+        "group": "trend",
+        "n": 115,
+        "wins": 32,
+        "win_pct": 27.8,
+        "pnl_usdt": 0.8166,
+        "avg_usdt": 0.0071,
+        "pf": 1.012
+      }
+    ],
+    "EARLIER HALF: UTC BLOCKS": [
+      {
+        "group": "00-05 UTC",
+        "n": 29,
+        "wins": 10,
+        "win_pct": 34.5,
+        "pnl_usdt": 4.8894,
+        "avg_usdt": 0.1686,
+        "pf": 1.373
+      },
+      {
+        "group": "06-11 UTC",
+        "n": 31,
+        "wins": 9,
+        "win_pct": 29.0,
+        "pnl_usdt": -5.7708,
+        "avg_usdt": -0.1862,
+        "pf": 0.727
+      },
+      {
+        "group": "12-17 UTC",
+        "n": 34,
+        "wins": 12,
+        "win_pct": 35.3,
+        "pnl_usdt": -1.3583,
+        "avg_usdt": -0.04,
+        "pf": 0.945
+      },
+      {
+        "group": "18-23 UTC",
+        "n": 32,
+        "wins": 11,
+        "win_pct": 34.4,
+        "pnl_usdt": 9.0477,
+        "avg_usdt": 0.2827,
+        "pf": 1.556
+      }
+    ],
+    "LATER HALF: UTC BLOCKS": [
+      {
+        "group": "00-05 UTC",
+        "n": 32,
+        "wins": 8,
+        "win_pct": 25.0,
+        "pnl_usdt": -3.7317,
+        "avg_usdt": -0.1166,
+        "pf": 0.767
+      },
+      {
+        "group": "06-11 UTC",
+        "n": 34,
+        "wins": 12,
+        "win_pct": 35.3,
+        "pnl_usdt": 3.3127,
+        "avg_usdt": 0.0974,
+        "pf": 1.135
+      },
+      {
+        "group": "12-17 UTC",
+        "n": 30,
+        "wins": 6,
+        "win_pct": 20.0,
+        "pnl_usdt": -25.2811,
+        "avg_usdt": -0.8427,
+        "pf": 0.214
+      },
+      {
+        "group": "18-23 UTC",
+        "n": 31,
+        "wins": 9,
+        "win_pct": 29.0,
+        "pnl_usdt": 4.7084,
+        "avg_usdt": 0.1519,
+        "pf": 1.29
+      }
+    ],
+    "recovery: weekday": [
+      {
+        "group": "Mo",
+        "n": 21,
+        "wins": 4,
+        "win_pct": 19.0,
+        "pnl_usdt": -9.6175,
+        "avg_usdt": -0.458,
+        "pf": 0.503
+      },
+      {
+        "group": "Di",
+        "n": 17,
+        "wins": 9,
+        "win_pct": 52.9,
+        "pnl_usdt": 6.4417,
+        "avg_usdt": 0.3789,
+        "pf": 1.566
+      },
+      {
+        "group": "Mi",
+        "n": 24,
+        "wins": 10,
+        "win_pct": 41.7,
+        "pnl_usdt": 0.4425,
+        "avg_usdt": 0.0184,
+        "pf": 1.031
+      },
+      {
+        "group": "Do",
+        "n": 12,
+        "wins": 2,
+        "win_pct": 16.7,
+        "pnl_usdt": -6.5876,
+        "avg_usdt": -0.549,
+        "pf": 0.551
+      },
+      {
+        "group": "Fr",
+        "n": 25,
+        "wins": 11,
+        "win_pct": 44.0,
+        "pnl_usdt": 0.9546,
+        "avg_usdt": 0.0382,
+        "pf": 1.061
+      },
+      {
+        "group": "Sa",
+        "n": 12,
+        "wins": 2,
+        "win_pct": 16.7,
+        "pnl_usdt": -3.5165,
+        "avg_usdt": -0.293,
+        "pf": 0.269
+      },
+      {
+        "group": "So",
+        "n": 27,
+        "wins": 7,
+        "win_pct": 25.9,
+        "pnl_usdt": -3.1176,
+        "avg_usdt": -0.1155,
+        "pf": 0.76
+      }
+    ],
+    "recovery: UTC block": [
+      {
+        "group": "00-05 UTC",
+        "n": 34,
+        "wins": 10,
+        "win_pct": 29.4,
+        "pnl_usdt": -4.0993,
+        "avg_usdt": -0.1206,
+        "pf": 0.77
+      },
+      {
+        "group": "06-11 UTC",
+        "n": 43,
+        "wins": 17,
+        "win_pct": 39.5,
+        "pnl_usdt": 6.6062,
+        "avg_usdt": 0.1536,
+        "pf": 1.229
+      },
+      {
+        "group": "12-17 UTC",
+        "n": 30,
+        "wins": 8,
+        "win_pct": 26.7,
+        "pnl_usdt": -13.0407,
+        "avg_usdt": -0.4347,
+        "pf": 0.556
+      },
+      {
+        "group": "18-23 UTC",
+        "n": 31,
+        "wins": 10,
+        "win_pct": 32.3,
+        "pnl_usdt": -4.4665,
+        "avg_usdt": -0.1441,
+        "pf": 0.741
+      }
+    ],
+    "trend: weekday": [
+      {
+        "group": "Mo",
+        "n": 16,
+        "wins": 4,
+        "win_pct": 25.0,
+        "pnl_usdt": -5.7075,
+        "avg_usdt": -0.3567,
+        "pf": 0.658
+      },
+      {
+        "group": "Di",
+        "n": 15,
+        "wins": 3,
+        "win_pct": 20.0,
+        "pnl_usdt": 0.497,
+        "avg_usdt": 0.0331,
+        "pf": 1.053
+      },
+      {
+        "group": "Mi",
+        "n": 17,
+        "wins": 6,
+        "win_pct": 35.3,
+        "pnl_usdt": -2.6071,
+        "avg_usdt": -0.1534,
+        "pf": 0.761
+      },
+      {
+        "group": "Do",
+        "n": 14,
+        "wins": 7,
+        "win_pct": 50.0,
+        "pnl_usdt": 0.584,
+        "avg_usdt": 0.0417,
+        "pf": 1.069
+      },
+      {
+        "group": "Fr",
+        "n": 13,
+        "wins": 5,
+        "win_pct": 38.5,
+        "pnl_usdt": -1.5403,
+        "avg_usdt": -0.1185,
+        "pf": 0.796
+      },
+      {
+        "group": "Sa",
+        "n": 15,
+        "wins": 2,
+        "win_pct": 13.3,
+        "pnl_usdt": 4.3025,
+        "avg_usdt": 0.2868,
+        "pf": 1.727
+      },
+      {
+        "group": "So",
+        "n": 25,
+        "wins": 5,
+        "win_pct": 20.0,
+        "pnl_usdt": 5.288,
+        "avg_usdt": 0.2115,
+        "pf": 1.438
+      }
+    ],
+    "trend: UTC block": [
+      {
+        "group": "00-05 UTC",
+        "n": 27,
+        "wins": 8,
+        "win_pct": 29.6,
+        "pnl_usdt": 5.257,
+        "avg_usdt": 0.1947,
+        "pf": 1.464
+      },
+      {
+        "group": "06-11 UTC",
+        "n": 22,
+        "wins": 4,
+        "win_pct": 18.2,
+        "pnl_usdt": -9.0643,
+        "avg_usdt": -0.412,
+        "pf": 0.458
+      },
+      {
+        "group": "12-17 UTC",
+        "n": 34,
+        "wins": 10,
+        "win_pct": 29.4,
+        "pnl_usdt": -13.5987,
+        "avg_usdt": -0.4,
+        "pf": 0.508
+      },
+      {
+        "group": "18-23 UTC",
+        "n": 32,
+        "wins": 10,
+        "win_pct": 31.2,
+        "pnl_usdt": 18.2226,
+        "avg_usdt": 0.5695,
+        "pf": 2.191
+      }
+    ]
+  },
+  "weekly_bootstrap_mean_ci95": {
+    "00-05 UTC": [
+      -0.33908,
+      0.35158
+    ],
+    "06-11 UTC": [
+      -0.47807,
+      0.48123
+    ],
+    "12-17 UTC": [
+      -0.83657,
+      0.04615
+    ],
+    "18-23 UTC": [
+      -0.2513,
+      0.78988
+    ]
+  }
+}

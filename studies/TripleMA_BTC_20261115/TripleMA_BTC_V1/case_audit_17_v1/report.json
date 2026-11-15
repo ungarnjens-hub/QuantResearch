@@ -1,0 +1,56 @@
+{
+  "scope": "Exploratory examination of 17 already-selected nonwinning trades with realized intra-trade MFE >= 2%. NOT predictive validation.",
+  "hypothesis_under_examination": "Some nonwinning crosses develop a +2% favorable excursion before the original EMA cross exit; describe the observed timing and subsequent giveback.",
+  "mechanism": "Delayed EMA cross exits can give back unrealized directional gains as the trend weakens.",
+  "baseline": "Other losing trades and original winners, purely descriptive; groups are outcome-selected and not causally comparable.",
+  "decision_rule": "Descriptive only; no parameter or exit selection; results cannot justify changing the strategy without separate preregistered study.",
+  "inputs_sha256": {
+    "diagnostics_csv": "dd86f69601aeb437df45c878665bb538f60d971cdcc50a2d543e43c078dd61fc",
+    "btc_5m": "1c7da956cb6eafd0ca930eab67db1b620f15942fa6542a0165ae5cff2ac9950e"
+  },
+  "cases_n": 17,
+  "groups": {
+    "17_selected_cases": {
+      "n": 17,
+      "net_pnl_usdt": -14.8067,
+      "median_trade_return_pct": -1.044,
+      "median_mfe_pct": 2.441,
+      "median_mae_pct": -1.335,
+      "median_duration_hours": 20.0
+    },
+    "other_nonwinning": {
+      "n": 159,
+      "net_pnl_usdt": -149.4427,
+      "median_trade_return_pct": -0.806,
+      "median_mfe_pct": 0.38,
+      "median_mae_pct": -0.887,
+      "median_duration_hours": 7.0
+    },
+    "winning": {
+      "n": 77,
+      "net_pnl_usdt": 150.0656,
+      "median_trade_return_pct": 1.566,
+      "median_mfe_pct": 4.04,
+      "median_mae_pct": -0.391,
+      "median_duration_hours": 47.0
+    }
+  },
+  "selected_cases": {
+    "by_type": {
+      "recovery": 10,
+      "trend": 7
+    },
+    "high_rvol_n": 3,
+    "median_hours_to_first_2pct": 4.17,
+    "median_hours_from_first_2pct_to_exit": 12.92,
+    "median_peak_to_exit_retrace_pp": 3.161,
+    "median_pre_touch_adverse_pct": -0.567
+  },
+  "limitations": [
+    "Cases selected on future MFE and final loss: strong outcome-selection bias.",
+    "5m OHLC cannot reconstruct order of high/low within a candle.",
+    "Entry and exit fill timestamps are simulated; no real slippage.",
+    "No testing of alternative stops, profit targets, or entry-time predictive filters.",
+    "No independent holdout used; 2024-2025 is previously inspected."
+  ]
+}

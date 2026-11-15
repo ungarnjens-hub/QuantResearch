@@ -1,0 +1,144 @@
+{
+  "scope": "Exploratory paired-trade stop scenario; NOT Freqtrade portfolio backtest",
+  "parameters": {
+    "trigger_on_completed_5m_close_gross_pct": 0.6,
+    "fixed_stop_gross_pct": 0.12,
+    "fee_exit_assumption_pct": 0.05,
+    "activation_effective": "following 5m candle",
+    "gap_fill": "worse actual candle open when open below stop",
+    "original_entries_and_ema_exits": "unchanged, except earlier stop when touched",
+    "initial_stop": "Original V1 -99%; no additional risk stop assumed"
+  },
+  "hashes": {
+    "trades_zip": "52db0cb1fe8ead0e78db5a54bf308fbb47370d3d99c877a4fa7f220a2179a9ab",
+    "btc_5m": "1c7da956cb6eafd0ca930eab67db1b620f15942fa6542a0165ae5cff2ac9950e"
+  },
+  "data": {
+    "5m_rows": 210528,
+    "5m_first": "2024-01-01 00:00:00+00:00",
+    "5m_last": "2025-12-31 23:55:00+00:00",
+    "trades": 253
+  },
+  "warnings": [
+    "This holds original future entries fixed: earlier exits can change capital availability and subsequent trades; NOT a portfolio backtest.",
+    "5m OHLC does not establish intra-candle order. A close-confirmed trigger and next-candle stop are conservative for trigger timing.",
+    "Stop price execution assumes fill at stop after a low touch; true slippage may worsen results.",
+    "0.12% stop includes 0.10% round-trip fees but may not cover gaps, slippage or funding.",
+    "2024-2025 already analyzed. Exploratory counterfactual, NOT independent evidence of improvement."
+  ],
+  "groups": [
+    {
+      "group": "ALL",
+      "n": 253,
+      "baseline_wins": 77,
+      "scenario_wins": 101,
+      "baseline_pnl_usdt": -14.1838,
+      "scenario_pnl_usdt": -21.8521,
+      "delta_usdt": -7.6684,
+      "activated": 147,
+      "stopped": 109,
+      "baseline_losers_stopped": 70,
+      "baseline_winners_stopped": 39,
+      "baseline_losers_now_nonnegative": 47,
+      "baseline_winners_now_nonpositive": 23
+    },
+    {
+      "group": "TREND",
+      "n": 115,
+      "baseline_wins": 32,
+      "scenario_wins": 41,
+      "baseline_pnl_usdt": 0.8166,
+      "scenario_pnl_usdt": 2.1939,
+      "delta_usdt": 1.3773,
+      "activated": 68,
+      "stopped": 52,
+      "baseline_losers_stopped": 36,
+      "baseline_winners_stopped": 16,
+      "baseline_losers_now_nonnegative": 20,
+      "baseline_winners_now_nonpositive": 11
+    },
+    {
+      "group": "RECOVERY",
+      "n": 138,
+      "baseline_wins": 45,
+      "scenario_wins": 60,
+      "baseline_pnl_usdt": -15.0004,
+      "scenario_pnl_usdt": -24.046,
+      "delta_usdt": -9.0456,
+      "activated": 79,
+      "stopped": 57,
+      "baseline_losers_stopped": 34,
+      "baseline_winners_stopped": 23,
+      "baseline_losers_now_nonnegative": 27,
+      "baseline_winners_now_nonpositive": 12
+    },
+    {
+      "group": "ORIGINAL_WINNERS",
+      "n": 77,
+      "baseline_wins": 77,
+      "scenario_wins": 54,
+      "baseline_pnl_usdt": 150.0656,
+      "scenario_pnl_usdt": 80.5546,
+      "delta_usdt": -69.511,
+      "activated": 77,
+      "stopped": 39,
+      "baseline_losers_stopped": 0,
+      "baseline_winners_stopped": 39,
+      "baseline_losers_now_nonnegative": 0,
+      "baseline_winners_now_nonpositive": 23
+    },
+    {
+      "group": "ORIGINAL_LOSERS",
+      "n": 176,
+      "baseline_wins": 0,
+      "scenario_wins": 47,
+      "baseline_pnl_usdt": -164.2494,
+      "scenario_pnl_usdt": -102.4067,
+      "delta_usdt": 61.8427,
+      "activated": 70,
+      "stopped": 70,
+      "baseline_losers_stopped": 70,
+      "baseline_winners_stopped": 0,
+      "baseline_losers_now_nonnegative": 47,
+      "baseline_winners_now_nonpositive": 0
+    }
+  ],
+  "gap_stops": 0,
+  "baseline_winners_cut_short_top5": [
+    {
+      "entry_utc": "2024-11-05 07:00:00+00:00",
+      "tag": "recovery",
+      "base_pnl": 7.13581154,
+      "scenario_pnl": -0.09026917221999309,
+      "delta_pnl": -7.226080712219993
+    },
+    {
+      "entry_utc": "2024-11-18 16:00:00+00:00",
+      "tag": "trend",
+      "base_pnl": 5.77783691,
+      "scenario_pnl": -0.171297674679999,
+      "delta_pnl": -5.9491345846799994
+    },
+    {
+      "entry_utc": "2025-02-28 17:00:00+00:00",
+      "tag": "recovery",
+      "base_pnl": 5.7274716,
+      "scenario_pnl": 0.02829497382001467,
+      "delta_pnl": -5.699176626179986
+    },
+    {
+      "entry_utc": "2025-06-23 06:00:00+00:00",
+      "tag": "recovery",
+      "base_pnl": 5.32294257,
+      "scenario_pnl": 0.009553673460006351,
+      "delta_pnl": -5.313388896539994
+    },
+    {
+      "entry_utc": "2025-10-23 06:00:00+00:00",
+      "tag": "recovery",
+      "base_pnl": 5.00142652,
+      "scenario_pnl": -0.05017349645997715,
+      "delta_pnl": -5.051600016459977
+    }
+  ]
+}

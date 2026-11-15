@@ -1,0 +1,195 @@
+{
+  "status": "EXPLORATORY DESCRIPTIVE ONLY; NO FILTER OR STRATEGY APPROVAL",
+  "hypothesis": "Trend-entry losers have less efficient/less directional pre-entry trends (ER24, ADX14) and more previous crossovers (48h) than winners",
+  "parameters_fixed_before_measurement": {
+    "adx_wilder": 14,
+    "er_lookback_hours": 24,
+    "previous_crossovers_hours": 48,
+    "bootstrap": "ISO weeks, 1500 resamples, indicative not multiple-test corrected"
+  },
+  "qa": {
+    "rows": 17963,
+    "trades": 253,
+    "signal_tag_mismatches": 0,
+    "input_data_sha256": "5ca9cf3c713f4a657d870c43d3ee6d6a4d839906622024a9cb95d96841084762",
+    "strategy_sha256": "15d766c086fb8aaa65cb4ceb71ae1f3ea992731bc14ea269244c804ee758fd88",
+    "trades_sha256": "52db0cb1fe8ead0e78db5a54bf308fbb47370d3d99c877a4fa7f220a2179a9ab"
+  },
+  "descriptive_groups": {
+    "trend": {
+      "all": {
+        "n": 115,
+        "wins": 32,
+        "losses": 83,
+        "pnl_usdt": 0.8166,
+        "feature_medians": {
+          "adx14": 18.9894,
+          "er24": 0.064,
+          "previous_crosses_48h": 3.0,
+          "ema200_slope_24h_pct": 0.4415,
+          "distance_ema200_pct": 2.1025
+        }
+      },
+      "wins": {
+        "n": 32,
+        "wins": 32,
+        "losses": 0,
+        "pnl_usdt": 71.7685,
+        "feature_medians": {
+          "adx14": 20.6877,
+          "er24": 0.0615,
+          "previous_crosses_48h": 2.0,
+          "ema200_slope_24h_pct": 0.4078,
+          "distance_ema200_pct": 2.0416
+        }
+      },
+      "losses": {
+        "n": 83,
+        "wins": 0,
+        "losses": 83,
+        "pnl_usdt": -70.9519,
+        "feature_medians": {
+          "adx14": 18.7699,
+          "er24": 0.064,
+          "previous_crosses_48h": 3.0,
+          "ema200_slope_24h_pct": 0.4472,
+          "distance_ema200_pct": 2.1471
+        }
+      }
+    },
+    "recovery": {
+      "all": {
+        "n": 138,
+        "wins": 45,
+        "losses": 93,
+        "pnl_usdt": -15.0004,
+        "feature_medians": {
+          "adx14": 21.5504,
+          "er24": 0.084,
+          "previous_crosses_48h": 2.0,
+          "ema200_slope_24h_pct": -0.5654,
+          "distance_ema200_pct": -1.3449
+        }
+      },
+      "wins": {
+        "n": 45,
+        "wins": 45,
+        "losses": 0,
+        "pnl_usdt": 78.2971,
+        "feature_medians": {
+          "adx14": 21.5644,
+          "er24": 0.095,
+          "previous_crosses_48h": 2.0,
+          "ema200_slope_24h_pct": -0.6154,
+          "distance_ema200_pct": -1.373
+        }
+      },
+      "losses": {
+        "n": 93,
+        "wins": 0,
+        "losses": 93,
+        "pnl_usdt": -93.2975,
+        "feature_medians": {
+          "adx14": 20.5912,
+          "er24": 0.0803,
+          "previous_crosses_48h": 2.0,
+          "ema200_slope_24h_pct": -0.5578,
+          "distance_ema200_pct": -1.3012
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "trend": {
+      "adx14": {
+        "loss_minus_win_mean": -1.36003,
+        "weekly_bootstrap_ci95": [
+          -3.83765,
+          1.23708
+        ],
+        "resamples": 1500
+      },
+      "er24": {
+        "loss_minus_win_mean": -0.0061,
+        "weekly_bootstrap_ci95": [
+          -0.04706,
+          0.02903
+        ],
+        "resamples": 1500
+      },
+      "previous_crosses_48h": {
+        "loss_minus_win_mean": 0.42244,
+        "weekly_bootstrap_ci95": [
+          -0.19767,
+          0.989
+        ],
+        "resamples": 1500
+      },
+      "ema200_slope_24h_pct": {
+        "loss_minus_win_mean": -0.10854,
+        "weekly_bootstrap_ci95": [
+          -0.34939,
+          0.10533
+        ],
+        "resamples": 1500
+      },
+      "distance_ema200_pct": {
+        "loss_minus_win_mean": -0.4507,
+        "weekly_bootstrap_ci95": [
+          -1.25813,
+          0.23777
+        ],
+        "resamples": 1500
+      }
+    },
+    "recovery": {
+      "adx14": {
+        "loss_minus_win_mean": -1.32609,
+        "weekly_bootstrap_ci95": [
+          -4.54151,
+          2.01193
+        ],
+        "resamples": 1500
+      },
+      "er24": {
+        "loss_minus_win_mean": -0.00612,
+        "weekly_bootstrap_ci95": [
+          -0.03003,
+          0.01823
+        ],
+        "resamples": 1500
+      },
+      "previous_crosses_48h": {
+        "loss_minus_win_mean": -0.48674,
+        "weekly_bootstrap_ci95": [
+          -1.07981,
+          0.06663
+        ],
+        "resamples": 1500
+      },
+      "ema200_slope_24h_pct": {
+        "loss_minus_win_mean": 0.17915,
+        "weekly_bootstrap_ci95": [
+          0.00724,
+          0.3696
+        ],
+        "resamples": 1500
+      },
+      "distance_ema200_pct": {
+        "loss_minus_win_mean": 0.43154,
+        "weekly_bootstrap_ci95": [
+          -0.0973,
+          1.01954
+        ],
+        "resamples": 1500
+      }
+    }
+  },
+  "limitations": [
+    "Groups defined by realized outcome: association, not predictive or causal validation",
+    "Indicators use completed crossing-hour candle only; at next hour open they become known",
+    "Unadjusted exploratory feature checks across several variables",
+    "No clean holdout; all 2024-2025 trades already inspected",
+    "EMA200 rising does not prove current market is trending"
+  ]
+}

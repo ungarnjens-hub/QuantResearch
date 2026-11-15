@@ -1,0 +1,286 @@
+{
+  "qa": {
+    "input_1h": "/home/icom/QuantResearch/TripleMA_BTC_V1/data/futures/BTC_USDT_USDT-1h-futures.feather",
+    "input_1h_sha256": "5ca9cf3c713f4a657d870c43d3ee6d6a4d839906622024a9cb95d96841084762",
+    "strategy_sha256": "15d766c086fb8aaa65cb4ceb71ae1f3ea992731bc14ea269244c804ee758fd88",
+    "trades_zip": "/home/icom/QuantResearch/TripleMA_BTC_V1/results/backtest-result-2026-11-15_12-54-39.zip",
+    "trades_zip_sha256": "52db0cb1fe8ead0e78db5a54bf308fbb47370d3d99c877a4fa7f220a2179a9ab",
+    "first_1h": "2024-01-01 00:00:00+00:00",
+    "last_1h": "2026-01-18 10:00:00+00:00",
+    "input_rows": 17963,
+    "duplicate_timestamps": 0,
+    "non_hour_gaps": 0,
+    "analyzed_all_eligible_crosses": 253,
+    "executed_original_trades": 253,
+    "matched_executed_trades": 253,
+    "unexecuted_signals": 0,
+    "missing_rvol_or_target_crosses": 13,
+    "sample": "2024-07-01 through 2025-12-31 UTC; exploratory, previously inspected",
+    "future_target": "Maximum HIGH of the next 24 1h candles / ATR at signal. Descriptive potential, not realizable PnL.",
+    "fixed_large_move": "MFE >= 2 ATR(14) over 24h, not optimized",
+    "fixed_rvol": "Completed crossing hour volume >=1.5 x median same UTC hour over previous 28 days",
+    "fixed_impulse": "(signal close - close 3h earlier) / signal ATR; descriptor high >=1 ATR",
+    "uncertainty": "Weekly block resampling, indicative, not a multiple-testing-adjusted confirmatory result",
+    "study_status": "EXPLORATORY ONLY; no independent confirmation and no trading approval"
+  },
+  "group_results": {
+    "all": {
+      "whole": {
+        "signals": 253,
+        "high_rvol": 68,
+        "normal_rvol": 185,
+        "executed": 253,
+        "large_move_rate_hi": 50.0,
+        "large_move_rate_lo": 56.76,
+        "mean_mfe_atr_hi": 2.551,
+        "mean_mfe_atr_lo": 3.34,
+        "mean_ret24_pct_hi": 0.023,
+        "mean_ret24_pct_lo": 0.139,
+        "executed_pnl_hi_usdt": 10.225,
+        "executed_pnl_lo_usdt": -24.409,
+        "executed_avg_return_hi_pct": 0.199,
+        "executed_avg_return_lo_pct": -0.105,
+        "weekly_blockboot_large_move_diff_pp": {
+          "diff": -0.06757,
+          "ci95": [
+            -0.22239,
+            0.08349
+          ],
+          "n_hi": 68,
+          "n_lo": 185,
+          "resamples": 1500
+        },
+        "weekly_blockboot_forward_24h_return_diff_pct": {
+          "diff": -0.11645,
+          "ci95": [
+            -0.81685,
+            0.54908
+          ],
+          "n_hi": 68,
+          "n_lo": 185,
+          "resamples": 1500
+        },
+        "impulse_ge_1atr": {
+          "n": 125,
+          "normal_n": 128,
+          "large_move_rate_impulse": 52.8,
+          "large_move_rate_normal": 57.03,
+          "weekly_blockboot_large_move_diff_pp": {
+            "diff": -0.04231,
+            "ci95": [
+              -0.16704,
+              0.09531
+            ],
+            "n_hi": 125,
+            "n_lo": 128,
+            "resamples": 1500
+          }
+        }
+      },
+      "earlier": {
+        "signals": 125,
+        "high_rvol": 32,
+        "normal_rvol": 93,
+        "executed": 125,
+        "large_move_rate_hi": 43.75,
+        "large_move_rate_lo": 53.76,
+        "mean_mfe_atr_hi": 2.238,
+        "mean_mfe_atr_lo": 3.371,
+        "mean_ret24_pct_hi": 0.125,
+        "mean_ret24_pct_lo": 0.276,
+        "executed_pnl_hi_usdt": 13.165,
+        "executed_pnl_lo_usdt": -4.836,
+        "executed_avg_return_hi_pct": 0.546,
+        "executed_avg_return_lo_pct": -0.017
+      },
+      "later": {
+        "signals": 128,
+        "high_rvol": 36,
+        "normal_rvol": 92,
+        "executed": 128,
+        "large_move_rate_hi": 55.56,
+        "large_move_rate_lo": 59.78,
+        "mean_mfe_atr_hi": 2.829,
+        "mean_mfe_atr_lo": 3.31,
+        "mean_ret24_pct_hi": -0.068,
+        "mean_ret24_pct_lo": 0.001,
+        "executed_pnl_hi_usdt": -2.94,
+        "executed_pnl_lo_usdt": -19.573,
+        "executed_avg_return_hi_pct": -0.109,
+        "executed_avg_return_lo_pct": -0.194
+      }
+    },
+    "trend": {
+      "whole": {
+        "signals": 115,
+        "high_rvol": 32,
+        "normal_rvol": 83,
+        "executed": 115,
+        "large_move_rate_hi": 53.12,
+        "large_move_rate_lo": 55.42,
+        "mean_mfe_atr_hi": 3.099,
+        "mean_mfe_atr_lo": 3.252,
+        "mean_ret24_pct_hi": 0.289,
+        "mean_ret24_pct_lo": -0.172,
+        "executed_pnl_hi_usdt": 12.841,
+        "executed_pnl_lo_usdt": -12.024,
+        "executed_avg_return_hi_pct": 0.491,
+        "executed_avg_return_lo_pct": -0.089,
+        "weekly_blockboot_large_move_diff_pp": {
+          "diff": -0.02297,
+          "ci95": [
+            -0.2638,
+            0.22586
+          ],
+          "n_hi": 32,
+          "n_lo": 83,
+          "resamples": 1500
+        },
+        "weekly_blockboot_forward_24h_return_diff_pct": {
+          "diff": 0.46101,
+          "ci95": [
+            -0.46084,
+            1.46595
+          ],
+          "n_hi": 32,
+          "n_lo": 83,
+          "resamples": 1500
+        },
+        "impulse_ge_1atr": {
+          "n": 60,
+          "normal_n": 55,
+          "large_move_rate_impulse": 56.67,
+          "large_move_rate_normal": 52.73,
+          "weekly_blockboot_large_move_diff_pp": {
+            "diff": 0.03939,
+            "ci95": [
+              -0.16578,
+              0.23376
+            ],
+            "n_hi": 60,
+            "n_lo": 55,
+            "resamples": 1500
+          }
+        }
+      },
+      "earlier": {
+        "signals": 55,
+        "high_rvol": 16,
+        "normal_rvol": 39,
+        "executed": 55,
+        "large_move_rate_hi": 50.0,
+        "large_move_rate_lo": 46.15,
+        "mean_mfe_atr_hi": 2.605,
+        "mean_mfe_atr_lo": 3.414,
+        "mean_ret24_pct_hi": 0.23,
+        "mean_ret24_pct_lo": -0.002,
+        "executed_pnl_hi_usdt": 7.092,
+        "executed_pnl_lo_usdt": -1.295,
+        "executed_avg_return_hi_pct": 0.672,
+        "executed_avg_return_lo_pct": 0.029
+      },
+      "later": {
+        "signals": 60,
+        "high_rvol": 16,
+        "normal_rvol": 44,
+        "executed": 60,
+        "large_move_rate_hi": 56.25,
+        "large_move_rate_lo": 63.64,
+        "mean_mfe_atr_hi": 3.593,
+        "mean_mfe_atr_lo": 3.109,
+        "mean_ret24_pct_hi": 0.347,
+        "mean_ret24_pct_lo": -0.324,
+        "executed_pnl_hi_usdt": 5.749,
+        "executed_pnl_lo_usdt": -10.73,
+        "executed_avg_return_hi_pct": 0.31,
+        "executed_avg_return_lo_pct": -0.194
+      }
+    },
+    "recovery": {
+      "whole": {
+        "signals": 138,
+        "high_rvol": 36,
+        "normal_rvol": 102,
+        "executed": 138,
+        "large_move_rate_hi": 47.22,
+        "large_move_rate_lo": 57.84,
+        "mean_mfe_atr_hi": 2.064,
+        "mean_mfe_atr_lo": 3.412,
+        "mean_ret24_pct_hi": -0.214,
+        "mean_ret24_pct_lo": 0.393,
+        "executed_pnl_hi_usdt": -2.616,
+        "executed_pnl_lo_usdt": -12.385,
+        "executed_avg_return_hi_pct": -0.06,
+        "executed_avg_return_lo_pct": -0.118,
+        "weekly_blockboot_large_move_diff_pp": {
+          "diff": -0.10621,
+          "ci95": [
+            -0.29057,
+            0.07792
+          ],
+          "n_hi": 36,
+          "n_lo": 102,
+          "resamples": 1500
+        },
+        "weekly_blockboot_forward_24h_return_diff_pct": {
+          "diff": -0.60634,
+          "ci95": [
+            -1.6448,
+            0.39839
+          ],
+          "n_hi": 36,
+          "n_lo": 102,
+          "resamples": 1500
+        },
+        "impulse_ge_1atr": {
+          "n": 65,
+          "normal_n": 73,
+          "large_move_rate_impulse": 49.23,
+          "large_move_rate_normal": 60.27,
+          "weekly_blockboot_large_move_diff_pp": {
+            "diff": -0.11043,
+            "ci95": [
+              -0.29924,
+              0.07799
+            ],
+            "n_hi": 65,
+            "n_lo": 73,
+            "resamples": 1500
+          }
+        }
+      },
+      "earlier": {
+        "signals": 70,
+        "high_rvol": 16,
+        "normal_rvol": 54,
+        "executed": 70,
+        "large_move_rate_hi": 37.5,
+        "large_move_rate_lo": 59.26,
+        "mean_mfe_atr_hi": 1.871,
+        "mean_mfe_atr_lo": 3.339,
+        "mean_ret24_pct_hi": 0.019,
+        "mean_ret24_pct_lo": 0.477,
+        "executed_pnl_hi_usdt": 6.073,
+        "executed_pnl_lo_usdt": -3.542,
+        "executed_avg_return_hi_pct": 0.419,
+        "executed_avg_return_lo_pct": -0.05
+      },
+      "later": {
+        "signals": 68,
+        "high_rvol": 20,
+        "normal_rvol": 48,
+        "executed": 68,
+        "large_move_rate_hi": 55.0,
+        "large_move_rate_lo": 56.25,
+        "mean_mfe_atr_hi": 2.218,
+        "mean_mfe_atr_lo": 3.494,
+        "mean_ret24_pct_hi": -0.4,
+        "mean_ret24_pct_lo": 0.298,
+        "executed_pnl_hi_usdt": -8.689,
+        "executed_pnl_lo_usdt": -8.843,
+        "executed_avg_return_hi_pct": -0.444,
+        "executed_avg_return_lo_pct": -0.194
+      }
+    }
+  }
+}

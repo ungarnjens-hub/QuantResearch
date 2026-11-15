@@ -1,0 +1,43 @@
+{
+  "classification": "EXPLORATORY; time windows selected from this development period",
+  "rules": "Long entry outside 12-17 UTC, short entry only 12-17 UTC; 1.5 ATR signal-time stop; 1h/5m",
+  "period": "2024-07-01/2026-01-01",
+  "summary": {
+    "TripleMA_BTC_V1_Gate_ATR15_TrendOnly": {
+      "trades": 81,
+      "wins": 21,
+      "net_usdt": 16.91076,
+      "pf": 1.43558,
+      "stops": 35
+    },
+    "TripleMA_BTC_V1_ATR15_Short_12to17UTC": {
+      "trades": 34,
+      "wins": 10,
+      "net_usdt": 6.0936,
+      "pf": 1.33984,
+      "stops": 13
+    },
+    "TripleMA_BTC_V1_ATR15_Complementary_Hours": {
+      "trades": 115,
+      "wins": 31,
+      "net_usdt": 23.00436,
+      "pf": 1.40533,
+      "stops": 48
+    }
+  },
+  "qa": {
+    "long_reference": true,
+    "short_only": true,
+    "short_hours": true,
+    "combined_entry_hours": true,
+    "short_stops": true
+  },
+  "entry_overlap": {
+    "original_long_missing": 0,
+    "new_long": 0,
+    "short_missing": 0,
+    "new_short": 0
+  },
+  "original_sha256": "15d766c086fb8aaa65cb4ceb71ae1f3ea992731bc14ea269244c804ee758fd88",
+  "zip": "/home/icom/QuantResearch/TripleMA_Complementary_Hours_AB_V1/user_data/backtest_results/backtest-result-2026-11-15_16-16-55.zip"
+}

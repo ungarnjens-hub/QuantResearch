@@ -1,0 +1,931 @@
+{
+  "classification": "EXPLORATORY ONLY; existing 2024-2025 development data",
+  "design": "No time gate, EMA7/25/200 trend-only mirror, 1.5 ATR initial stop; separately Long, Short, Both",
+  "summary": {
+    "TripleMA_BTC_V1_Gate_ATR15_TrendOnly": {
+      "n": 81,
+      "wins": 21,
+      "losses": 60,
+      "pnl": 16.91076,
+      "avg": 0.20877,
+      "pf": 1.43558,
+      "stops": 35
+    },
+    "TripleMA_BTC_V1_ATR15_TrendOnly_NoGate": {
+      "n": 115,
+      "wins": 29,
+      "losses": 86,
+      "pnl": 1.97072,
+      "avg": 0.01714,
+      "pf": 1.03198,
+      "stops": 53
+    },
+    "TripleMA_BTC_V1_ATR15_ShortOnly_NoGate": {
+      "n": 98,
+      "wins": 20,
+      "losses": 78,
+      "pnl": -11.62931,
+      "avg": -0.11867,
+      "pf": 0.79311,
+      "stops": 34
+    },
+    "TripleMA_BTC_V1_ATR15_LongShort_NoGate": {
+      "n": 213,
+      "wins": 49,
+      "losses": 164,
+      "pnl": -9.65859,
+      "avg": -0.04535,
+      "pf": 0.91803,
+      "stops": 87
+    }
+  },
+  "qa": {
+    "control_n81": true,
+    "control_pnl16_91076": true,
+    "control_pf1_43558": true,
+    "long_only_is_long": true,
+    "short_only_is_short": true,
+    "short_has_atr_stop": true,
+    "no_holdout": true
+  },
+  "combined_entry_comparison": {
+    "long_missing_in_combined": 0,
+    "long_new_in_combined": 0,
+    "short_missing_in_combined": 0,
+    "short_new_in_combined": 0
+  },
+  "sources": {
+    "original_strategy_sha256": "15d766c086fb8aaa65cb4ceb71ae1f3ea992731bc14ea269244c804ee758fd88",
+    "original_short_script_sha256": "9fa7f661dd8f60741d4ad98eb019df07ecc2f8bc31e139e3e0a25acb7f4e23cd",
+    "fourway_script_sha256": "039d5cef1d3698be5d996d5d770359cdb88976d1e2f9cf9039b6dc9be56d088f"
+  },
+  "archive": "/home/icom/QuantResearch/TripleMA_Ungated_LongShort_Time_Audit_V1/user_data/backtest_results/backtest-result-2026-11-15_16-11-20.zip",
+  "tables": {
+    "TripleMA_BTC_V1_ATR15_TrendOnly_NoGate": {
+      "hour": [
+        {
+          "group": "0",
+          "n": 3,
+          "wins": 1,
+          "losses": 2,
+          "pnl": -0.57558,
+          "avg": -0.19186,
+          "pf": 0.31204,
+          "stops": 0
+        },
+        {
+          "group": "1",
+          "n": 1,
+          "wins": 1,
+          "losses": 0,
+          "pnl": 0.50576,
+          "avg": 0.50576,
+          "pf": "inf",
+          "stops": 0
+        },
+        {
+          "group": "2",
+          "n": 5,
+          "wins": 3,
+          "losses": 2,
+          "pnl": 8.88085,
+          "avg": 1.77617,
+          "pf": 30.89874,
+          "stops": 0
+        },
+        {
+          "group": "3",
+          "n": 4,
+          "wins": 2,
+          "losses": 2,
+          "pnl": 1.91637,
+          "avg": 0.47909,
+          "pf": 1.96822,
+          "stops": 2
+        },
+        {
+          "group": "4",
+          "n": 7,
+          "wins": 1,
+          "losses": 6,
+          "pnl": -0.48406,
+          "avg": -0.06915,
+          "pf": 0.84973,
+          "stops": 3
+        },
+        {
+          "group": "5",
+          "n": 7,
+          "wins": 0,
+          "losses": 7,
+          "pnl": -4.75807,
+          "avg": -0.67972,
+          "pf": 0.0,
+          "stops": 4
+        },
+        {
+          "group": "6",
+          "n": 2,
+          "wins": 0,
+          "losses": 2,
+          "pnl": -1.54964,
+          "avg": -0.77482,
+          "pf": 0.0,
+          "stops": 2
+        },
+        {
+          "group": "7",
+          "n": 8,
+          "wins": 0,
+          "losses": 8,
+          "pnl": -3.8362,
+          "avg": -0.47952,
+          "pf": 0.0,
+          "stops": 3
+        },
+        {
+          "group": "8",
+          "n": 4,
+          "wins": 3,
+          "losses": 1,
+          "pnl": 2.56361,
+          "avg": 0.6409,
+          "pf": 1.89175,
+          "stops": 1
+        },
+        {
+          "group": "9",
+          "n": 2,
+          "wins": 0,
+          "losses": 2,
+          "pnl": -1.64733,
+          "avg": -0.82367,
+          "pf": 0.0,
+          "stops": 2
+        },
+        {
+          "group": "10",
+          "n": 5,
+          "wins": 1,
+          "losses": 4,
+          "pnl": -0.46119,
+          "avg": -0.09224,
+          "pf": 0.82731,
+          "stops": 3
+        },
+        {
+          "group": "11",
+          "n": 1,
+          "wins": 0,
+          "losses": 1,
+          "pnl": -0.4893,
+          "avg": -0.4893,
+          "pf": 0.0,
+          "stops": 0
+        },
+        {
+          "group": "12",
+          "n": 5,
+          "wins": 2,
+          "losses": 3,
+          "pnl": -2.53002,
+          "avg": -0.506,
+          "pf": 0.17972,
+          "stops": 3
+        },
+        {
+          "group": "13",
+          "n": 7,
+          "wins": 1,
+          "losses": 6,
+          "pnl": -3.62227,
+          "avg": -0.51747,
+          "pf": 0.04151,
+          "stops": 2
+        },
+        {
+          "group": "14",
+          "n": 7,
+          "wins": 1,
+          "losses": 6,
+          "pnl": -2.59189,
+          "avg": -0.37027,
+          "pf": 0.42175,
+          "stops": 5
+        },
+        {
+          "group": "15",
+          "n": 1,
+          "wins": 0,
+          "losses": 1,
+          "pnl": -0.85848,
+          "avg": -0.85848,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "16",
+          "n": 10,
+          "wins": 3,
+          "losses": 7,
+          "pnl": -3.1052,
+          "avg": -0.31052,
+          "pf": 0.61905,
+          "stops": 6
+        },
+        {
+          "group": "17",
+          "n": 4,
+          "wins": 1,
+          "losses": 3,
+          "pnl": -2.23218,
+          "avg": -0.55804,
+          "pf": 0.08418,
+          "stops": 1
+        },
+        {
+          "group": "18",
+          "n": 6,
+          "wins": 2,
+          "losses": 4,
+          "pnl": 2.16097,
+          "avg": 0.36016,
+          "pf": 1.80834,
+          "stops": 2
+        },
+        {
+          "group": "19",
+          "n": 5,
+          "wins": 0,
+          "losses": 5,
+          "pnl": -3.30174,
+          "avg": -0.66035,
+          "pf": 0.0,
+          "stops": 3
+        },
+        {
+          "group": "20",
+          "n": 5,
+          "wins": 3,
+          "losses": 2,
+          "pnl": 6.00321,
+          "avg": 1.20064,
+          "pf": 4.79369,
+          "stops": 1
+        },
+        {
+          "group": "21",
+          "n": 6,
+          "wins": 1,
+          "losses": 5,
+          "pnl": -1.59507,
+          "avg": -0.26585,
+          "pf": 0.49318,
+          "stops": 4
+        },
+        {
+          "group": "22",
+          "n": 3,
+          "wins": 1,
+          "losses": 2,
+          "pnl": 6.0394,
+          "avg": 2.01313,
+          "pf": 5.20451,
+          "stops": 2
+        },
+        {
+          "group": "23",
+          "n": 7,
+          "wins": 2,
+          "losses": 5,
+          "pnl": 7.53877,
+          "avg": 1.07697,
+          "pf": 3.98863,
+          "stops": 3
+        }
+      ],
+      "block": [
+        {
+          "group": "00-05 UTC",
+          "n": 27,
+          "wins": 8,
+          "losses": 19,
+          "pnl": 5.48527,
+          "avg": 0.20316,
+          "pf": 1.49451,
+          "stops": 9
+        },
+        {
+          "group": "06-11 UTC",
+          "n": 22,
+          "wins": 4,
+          "losses": 18,
+          "pnl": -5.42006,
+          "avg": -0.24637,
+          "pf": 0.58524,
+          "stops": 11
+        },
+        {
+          "group": "12-17 UTC",
+          "n": 34,
+          "wins": 8,
+          "losses": 26,
+          "pnl": -14.94003,
+          "avg": -0.43941,
+          "pf": 0.34453,
+          "stops": 18
+        },
+        {
+          "group": "18-23 UTC",
+          "n": 32,
+          "wins": 9,
+          "losses": 23,
+          "pnl": 16.84554,
+          "avg": 0.52642,
+          "pf": 2.1488,
+          "stops": 15
+        }
+      ],
+      "week_num": [
+        {
+          "group": "Mo",
+          "n": 16,
+          "wins": 3,
+          "losses": 13,
+          "pnl": -9.33072,
+          "avg": -0.58317,
+          "pf": 0.35821,
+          "stops": 10
+        },
+        {
+          "group": "Di",
+          "n": 15,
+          "wins": 3,
+          "losses": 12,
+          "pnl": 2.28712,
+          "avg": 0.15247,
+          "pf": 1.30289,
+          "stops": 7
+        },
+        {
+          "group": "Mi",
+          "n": 17,
+          "wins": 5,
+          "losses": 12,
+          "pnl": -3.16291,
+          "avg": -0.18605,
+          "pf": 0.665,
+          "stops": 9
+        },
+        {
+          "group": "Do",
+          "n": 14,
+          "wins": 7,
+          "losses": 7,
+          "pnl": 1.79336,
+          "avg": 0.1281,
+          "pf": 1.24737,
+          "stops": 6
+        },
+        {
+          "group": "Fr",
+          "n": 13,
+          "wins": 4,
+          "losses": 9,
+          "pnl": -0.5534,
+          "avg": -0.04257,
+          "pf": 0.91054,
+          "stops": 3
+        },
+        {
+          "group": "Sa",
+          "n": 15,
+          "wins": 2,
+          "losses": 13,
+          "pnl": 4.45964,
+          "avg": 0.29731,
+          "pf": 1.7739,
+          "stops": 5
+        },
+        {
+          "group": "So",
+          "n": 25,
+          "wins": 5,
+          "losses": 20,
+          "pnl": 6.47762,
+          "avg": 0.2591,
+          "pf": 1.59496,
+          "stops": 13
+        }
+      ],
+      "year": [
+        {
+          "group": "2024",
+          "n": 41,
+          "wins": 11,
+          "losses": 30,
+          "pnl": 6.41915,
+          "avg": 0.15656,
+          "pf": 1.32604,
+          "stops": 20
+        },
+        {
+          "group": "2025",
+          "n": 74,
+          "wins": 18,
+          "losses": 56,
+          "pnl": -4.44842,
+          "avg": -0.06011,
+          "pf": 0.8939,
+          "stops": 33
+        }
+      ],
+      "half": [
+        {
+          "group": "earlier",
+          "n": 57,
+          "wins": 14,
+          "losses": 43,
+          "pnl": -0.96333,
+          "avg": -0.0169,
+          "pf": 0.97057,
+          "stops": 29
+        },
+        {
+          "group": "later",
+          "n": 58,
+          "wins": 15,
+          "losses": 43,
+          "pnl": 2.93405,
+          "avg": 0.05059,
+          "pf": 1.10159,
+          "stops": 24
+        }
+      ]
+    },
+    "TripleMA_BTC_V1_ATR15_ShortOnly_NoGate": {
+      "hour": [
+        {
+          "group": "0",
+          "n": 3,
+          "wins": 0,
+          "losses": 3,
+          "pnl": -2.27986,
+          "avg": -0.75995,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "1",
+          "n": 1,
+          "wins": 0,
+          "losses": 1,
+          "pnl": -0.89208,
+          "avg": -0.89208,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "2",
+          "n": 2,
+          "wins": 1,
+          "losses": 1,
+          "pnl": 0.62576,
+          "avg": 0.31288,
+          "pf": 1.7571,
+          "stops": 1
+        },
+        {
+          "group": "3",
+          "n": 3,
+          "wins": 1,
+          "losses": 2,
+          "pnl": -0.37266,
+          "avg": -0.12422,
+          "pf": 0.55165,
+          "stops": 0
+        },
+        {
+          "group": "4",
+          "n": 5,
+          "wins": 1,
+          "losses": 4,
+          "pnl": 0.68343,
+          "avg": 0.13669,
+          "pf": 1.31653,
+          "stops": 1
+        },
+        {
+          "group": "5",
+          "n": 7,
+          "wins": 1,
+          "losses": 6,
+          "pnl": -1.73854,
+          "avg": -0.24836,
+          "pf": 0.57715,
+          "stops": 2
+        },
+        {
+          "group": "6",
+          "n": 4,
+          "wins": 0,
+          "losses": 4,
+          "pnl": -2.26804,
+          "avg": -0.56701,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "7",
+          "n": 2,
+          "wins": 0,
+          "losses": 2,
+          "pnl": -1.25649,
+          "avg": -0.62824,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "8",
+          "n": 8,
+          "wins": 2,
+          "losses": 6,
+          "pnl": 0.67277,
+          "avg": 0.0841,
+          "pf": 1.18733,
+          "stops": 1
+        },
+        {
+          "group": "9",
+          "n": 1,
+          "wins": 0,
+          "losses": 1,
+          "pnl": -0.6005,
+          "avg": -0.6005,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "10",
+          "n": 4,
+          "wins": 1,
+          "losses": 3,
+          "pnl": -2.55576,
+          "avg": -0.63894,
+          "pf": 0.0501,
+          "stops": 2
+        },
+        {
+          "group": "11",
+          "n": 5,
+          "wins": 0,
+          "losses": 5,
+          "pnl": -3.58209,
+          "avg": -0.71642,
+          "pf": 0.0,
+          "stops": 2
+        },
+        {
+          "group": "12",
+          "n": 1,
+          "wins": 0,
+          "losses": 1,
+          "pnl": -0.56361,
+          "avg": -0.56361,
+          "pf": 0.0,
+          "stops": 0
+        },
+        {
+          "group": "13",
+          "n": 3,
+          "wins": 0,
+          "losses": 3,
+          "pnl": -2.10158,
+          "avg": -0.70053,
+          "pf": 0.0,
+          "stops": 2
+        },
+        {
+          "group": "14",
+          "n": 11,
+          "wins": 3,
+          "losses": 8,
+          "pnl": -2.80706,
+          "avg": -0.25519,
+          "pf": 0.51275,
+          "stops": 4
+        },
+        {
+          "group": "15",
+          "n": 8,
+          "wins": 2,
+          "losses": 6,
+          "pnl": 4.1296,
+          "avg": 0.5162,
+          "pf": 2.05691,
+          "stops": 4
+        },
+        {
+          "group": "16",
+          "n": 6,
+          "wins": 4,
+          "losses": 2,
+          "pnl": 8.90603,
+          "avg": 1.48434,
+          "pf": 4.90447,
+          "stops": 1
+        },
+        {
+          "group": "17",
+          "n": 5,
+          "wins": 1,
+          "losses": 4,
+          "pnl": -1.46978,
+          "avg": -0.29396,
+          "pf": 0.55685,
+          "stops": 2
+        },
+        {
+          "group": "18",
+          "n": 4,
+          "wins": 1,
+          "losses": 3,
+          "pnl": 4.26754,
+          "avg": 1.06688,
+          "pf": 2.97985,
+          "stops": 0
+        },
+        {
+          "group": "19",
+          "n": 3,
+          "wins": 0,
+          "losses": 3,
+          "pnl": -2.67874,
+          "avg": -0.89291,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "20",
+          "n": 3,
+          "wins": 0,
+          "losses": 3,
+          "pnl": -1.97889,
+          "avg": -0.65963,
+          "pf": 0.0,
+          "stops": 1
+        },
+        {
+          "group": "21",
+          "n": 6,
+          "wins": 2,
+          "losses": 4,
+          "pnl": -0.63209,
+          "avg": -0.10535,
+          "pf": 0.80499,
+          "stops": 2
+        },
+        {
+          "group": "22",
+          "n": 2,
+          "wins": 0,
+          "losses": 2,
+          "pnl": -2.44595,
+          "avg": -1.22298,
+          "pf": 0.0,
+          "stops": 2
+        },
+        {
+          "group": "23",
+          "n": 1,
+          "wins": 0,
+          "losses": 1,
+          "pnl": -0.69071,
+          "avg": -0.69071,
+          "pf": 0.0,
+          "stops": 1
+        }
+      ],
+      "block": [
+        {
+          "group": "00-05 UTC",
+          "n": 21,
+          "wins": 4,
+          "losses": 17,
+          "pnl": -3.97395,
+          "avg": -0.18924,
+          "pf": 0.64199,
+          "stops": 6
+        },
+        {
+          "group": "06-11 UTC",
+          "n": 24,
+          "wins": 3,
+          "losses": 21,
+          "pnl": -9.59011,
+          "avg": -0.39959,
+          "pf": 0.31445,
+          "stops": 8
+        },
+        {
+          "group": "12-17 UTC",
+          "n": 34,
+          "wins": 10,
+          "losses": 24,
+          "pnl": 6.0936,
+          "avg": 0.17922,
+          "pf": 1.33984,
+          "stops": 13
+        },
+        {
+          "group": "18-23 UTC",
+          "n": 19,
+          "wins": 3,
+          "losses": 16,
+          "pnl": -4.15885,
+          "avg": -0.21889,
+          "pf": 0.68472,
+          "stops": 7
+        }
+      ],
+      "week_num": [
+        {
+          "group": "Mo",
+          "n": 13,
+          "wins": 0,
+          "losses": 13,
+          "pnl": -11.64144,
+          "avg": -0.8955,
+          "pf": 0.0,
+          "stops": 8
+        },
+        {
+          "group": "Di",
+          "n": 13,
+          "wins": 4,
+          "losses": 9,
+          "pnl": -4.09207,
+          "avg": -0.31477,
+          "pf": 0.3549,
+          "stops": 5
+        },
+        {
+          "group": "Mi",
+          "n": 15,
+          "wins": 0,
+          "losses": 15,
+          "pnl": -12.77553,
+          "avg": -0.8517,
+          "pf": 0.0,
+          "stops": 6
+        },
+        {
+          "group": "Do",
+          "n": 17,
+          "wins": 8,
+          "losses": 9,
+          "pnl": 12.70948,
+          "avg": 0.74762,
+          "pf": 2.81601,
+          "stops": 3
+        },
+        {
+          "group": "Fr",
+          "n": 9,
+          "wins": 3,
+          "losses": 6,
+          "pnl": 4.59002,
+          "avg": 0.51,
+          "pf": 1.86708,
+          "stops": 3
+        },
+        {
+          "group": "Sa",
+          "n": 10,
+          "wins": 2,
+          "losses": 8,
+          "pnl": -1.2445,
+          "avg": -0.12445,
+          "pf": 0.62623,
+          "stops": 0
+        },
+        {
+          "group": "So",
+          "n": 21,
+          "wins": 3,
+          "losses": 18,
+          "pnl": 0.82474,
+          "avg": 0.03927,
+          "pf": 1.08391,
+          "stops": 9
+        }
+      ],
+      "year": [
+        {
+          "group": "2024",
+          "n": 27,
+          "wins": 6,
+          "losses": 21,
+          "pnl": -0.98653,
+          "avg": -0.03654,
+          "pf": 0.92946,
+          "stops": 8
+        },
+        {
+          "group": "2025",
+          "n": 71,
+          "wins": 14,
+          "losses": 57,
+          "pnl": -10.64278,
+          "avg": -0.1499,
+          "pf": 0.74796,
+          "stops": 26
+        }
+      ],
+      "half": [
+        {
+          "group": "earlier",
+          "n": 49,
+          "wins": 8,
+          "losses": 41,
+          "pnl": -14.07101,
+          "avg": -0.28716,
+          "pf": 0.51396,
+          "stops": 16
+        },
+        {
+          "group": "later",
+          "n": 49,
+          "wins": 12,
+          "losses": 37,
+          "pnl": 2.4417,
+          "avg": 0.04983,
+          "pf": 1.08957,
+          "stops": 18
+        }
+      ]
+    }
+  },
+  "bootstrap": {
+    "TripleMA_BTC_V1_ATR15_TrendOnly_NoGate": {
+      "00-05 UTC": {
+        "ci95_avg_trade": [
+          -0.28215,
+          0.79784
+        ],
+        "number_of_trades": 27
+      },
+      "06-11 UTC": {
+        "ci95_avg_trade": [
+          -0.70186,
+          0.28007
+        ],
+        "number_of_trades": 22
+      },
+      "12-17 UTC": {
+        "ci95_avg_trade": [
+          -0.74662,
+          0.03618
+        ],
+        "number_of_trades": 34
+      },
+      "18-23 UTC": {
+        "ci95_avg_trade": [
+          -0.26588,
+          1.51534
+        ],
+        "number_of_trades": 32
+      }
+    },
+    "TripleMA_BTC_V1_ATR15_ShortOnly_NoGate": {
+      "00-05 UTC": {
+        "ci95_avg_trade": [
+          -0.62179,
+          0.29859
+        ],
+        "number_of_trades": 21
+      },
+      "06-11 UTC": {
+        "ci95_avg_trade": [
+          -0.71995,
+          0.06856
+        ],
+        "number_of_trades": 24
+      },
+      "12-17 UTC": {
+        "ci95_avg_trade": [
+          -0.33061,
+          0.77975
+        ],
+        "number_of_trades": 34
+      },
+      "18-23 UTC": {
+        "ci95_avg_trade": [
+          -0.85846,
+          0.7721
+        ],
+        "number_of_trades": 19
+      }
+    }
+  }
+}

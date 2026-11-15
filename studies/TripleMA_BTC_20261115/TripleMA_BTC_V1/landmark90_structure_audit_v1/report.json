@@ -1,0 +1,408 @@
+{
+  "purpose": "Exploratory 90m landmark market structure and momentum/volume; NO optimization",
+  "asof": "90min after completed 5m close confirming >= +0.6% from entry; features include only already completed candles",
+  "quality": {
+    "baseline_trades": 253,
+    "activated": 147,
+    "landmark_eligible": 146,
+    "competing_exit_or_missing": 1,
+    "excluded_by_reason": {
+      "original_EMA_exit_before_or_at_landmark": 1
+    },
+    "eligible_winners": 77,
+    "eligible_losers": 69,
+    "eligible_tag_counts": {
+      "recovery": 78,
+      "trend": 68
+    },
+    "5m_sha256": "1c7da956cb6eafd0ca930eab67db1b620f15942fa6542a0165ae5cff2ac9950e",
+    "paired_result_sha256": "8d161183269f67723ad817e91791f27b932601a5a0f898a01df410feddef8e12"
+  },
+  "measurements": {
+    "ALL": {
+      "n": 146,
+      "original_winners": 77,
+      "original_losers": 69,
+      "later_stop_hits": 97,
+      "return_from_entry_pct": {
+        "n": 146,
+        "median": 0.66596,
+        "q25": 0.40348,
+        "q75": 0.98177
+      },
+      "momentum_30m_pct": {
+        "n": 146,
+        "median": 0.00781,
+        "q25": -0.20184,
+        "q75": 0.2059
+      },
+      "momentum_90m_pct": {
+        "n": 146,
+        "median": -0.02699,
+        "q25": -0.29282,
+        "q75": 0.25502
+      },
+      "efficiency_90m": {
+        "n": 146,
+        "median": 0.1733,
+        "q25": 0.07198,
+        "q75": 0.30983
+      },
+      "higher_low_last3_vs_prev3": {
+        "n": 146,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "rvol_30m_vs_24h_median": {
+        "n": 146,
+        "median": 1.43469,
+        "q25": 0.88441,
+        "q75": 2.54778
+      },
+      "range_30m_pct": {
+        "n": 146,
+        "median": 0.46102,
+        "q25": 0.30034,
+        "q75": 0.72845
+      },
+      "all_5m_above_entry_last30m": {
+        "n": 146,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 1.0
+      }
+    },
+    "TREND": {
+      "n": 68,
+      "original_winners": 32,
+      "original_losers": 36,
+      "later_stop_hits": 50,
+      "return_from_entry_pct": {
+        "n": 68,
+        "median": 0.73737,
+        "q25": 0.3696,
+        "q75": 0.96912
+      },
+      "momentum_30m_pct": {
+        "n": 68,
+        "median": 0.03013,
+        "q25": -0.18199,
+        "q75": 0.22724
+      },
+      "momentum_90m_pct": {
+        "n": 68,
+        "median": -0.00747,
+        "q25": -0.29439,
+        "q75": 0.24463
+      },
+      "efficiency_90m": {
+        "n": 68,
+        "median": 0.17883,
+        "q25": 0.08562,
+        "q75": 0.31726
+      },
+      "higher_low_last3_vs_prev3": {
+        "n": 68,
+        "median": 1.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "rvol_30m_vs_24h_median": {
+        "n": 68,
+        "median": 1.66137,
+        "q25": 1.18963,
+        "q75": 2.71812
+      },
+      "range_30m_pct": {
+        "n": 68,
+        "median": 0.4377,
+        "q25": 0.32158,
+        "q75": 0.73942
+      },
+      "all_5m_above_entry_last30m": {
+        "n": 68,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 1.0
+      }
+    },
+    "RECOVERY": {
+      "n": 78,
+      "original_winners": 45,
+      "original_losers": 33,
+      "later_stop_hits": 47,
+      "return_from_entry_pct": {
+        "n": 78,
+        "median": 0.66474,
+        "q25": 0.47004,
+        "q75": 0.97689
+      },
+      "momentum_30m_pct": {
+        "n": 78,
+        "median": -0.02052,
+        "q25": -0.21914,
+        "q75": 0.16125
+      },
+      "momentum_90m_pct": {
+        "n": 78,
+        "median": -0.03651,
+        "q25": -0.27821,
+        "q75": 0.267
+      },
+      "efficiency_90m": {
+        "n": 78,
+        "median": 0.15353,
+        "q25": 0.06053,
+        "q75": 0.30585
+      },
+      "higher_low_last3_vs_prev3": {
+        "n": 78,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "rvol_30m_vs_24h_median": {
+        "n": 78,
+        "median": 1.20511,
+        "q25": 0.70222,
+        "q75": 2.417
+      },
+      "range_30m_pct": {
+        "n": 78,
+        "median": 0.49538,
+        "q25": 0.29436,
+        "q75": 0.68718
+      },
+      "all_5m_above_entry_last30m": {
+        "n": 78,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 1.0
+      }
+    },
+    "ORIGINAL_WINNERS": {
+      "n": 77,
+      "original_winners": 77,
+      "original_losers": 0,
+      "later_stop_hits": 32,
+      "return_from_entry_pct": {
+        "n": 77,
+        "median": 0.82091,
+        "q25": 0.49689,
+        "q75": 1.14808
+      },
+      "momentum_30m_pct": {
+        "n": 77,
+        "median": 0.0135,
+        "q25": -0.137,
+        "q75": 0.23893
+      },
+      "momentum_90m_pct": {
+        "n": 77,
+        "median": 0.08993,
+        "q25": -0.2325,
+        "q75": 0.38695
+      },
+      "efficiency_90m": {
+        "n": 77,
+        "median": 0.18145,
+        "q25": 0.08284,
+        "q75": 0.35876
+      },
+      "higher_low_last3_vs_prev3": {
+        "n": 77,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "rvol_30m_vs_24h_median": {
+        "n": 77,
+        "median": 1.54528,
+        "q25": 0.87948,
+        "q75": 2.98645
+      },
+      "range_30m_pct": {
+        "n": 77,
+        "median": 0.5308,
+        "q25": 0.29471,
+        "q75": 0.73906
+      },
+      "all_5m_above_entry_last30m": {
+        "n": 77,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 1.0
+      }
+    },
+    "ORIGINAL_LOSERS": {
+      "n": 69,
+      "original_winners": 0,
+      "original_losers": 69,
+      "later_stop_hits": 65,
+      "return_from_entry_pct": {
+        "n": 69,
+        "median": 0.58009,
+        "q25": 0.3521,
+        "q75": 0.79588
+      },
+      "momentum_30m_pct": {
+        "n": 69,
+        "median": -0.03383,
+        "q25": -0.31498,
+        "q75": 0.15139
+      },
+      "momentum_90m_pct": {
+        "n": 69,
+        "median": -0.07742,
+        "q25": -0.29356,
+        "q75": 0.14316
+      },
+      "efficiency_90m": {
+        "n": 69,
+        "median": 0.13513,
+        "q25": 0.07067,
+        "q75": 0.24747
+      },
+      "higher_low_last3_vs_prev3": {
+        "n": 69,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "rvol_30m_vs_24h_median": {
+        "n": 69,
+        "median": 1.39599,
+        "q25": 0.90611,
+        "q75": 2.25671
+      },
+      "range_30m_pct": {
+        "n": 69,
+        "median": 0.44473,
+        "q25": 0.30999,
+        "q75": 0.72836
+      },
+      "all_5m_above_entry_last30m": {
+        "n": 69,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 1.0
+      }
+    },
+    "ORIGINAL_WINNERS_STOPPED": {
+      "n": 32,
+      "original_winners": 32,
+      "original_losers": 0,
+      "later_stop_hits": 32,
+      "return_from_entry_pct": {
+        "n": 32,
+        "median": 0.50995,
+        "q25": 0.12381,
+        "q75": 0.99656
+      },
+      "momentum_30m_pct": {
+        "n": 32,
+        "median": -0.02729,
+        "q25": -0.20223,
+        "q75": 0.11801
+      },
+      "momentum_90m_pct": {
+        "n": 32,
+        "median": -0.2101,
+        "q25": -0.70623,
+        "q75": 0.16871
+      },
+      "efficiency_90m": {
+        "n": 32,
+        "median": 0.20768,
+        "q25": 0.11428,
+        "q75": 0.36868
+      },
+      "higher_low_last3_vs_prev3": {
+        "n": 32,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "rvol_30m_vs_24h_median": {
+        "n": 32,
+        "median": 1.13699,
+        "q25": 0.83417,
+        "q75": 1.75539
+      },
+      "range_30m_pct": {
+        "n": 32,
+        "median": 0.56958,
+        "q25": 0.31723,
+        "q75": 0.80969
+      },
+      "all_5m_above_entry_last30m": {
+        "n": 32,
+        "median": 1.0,
+        "q25": 0.75,
+        "q75": 1.0
+      }
+    },
+    "ORIGINAL_LOSERS_STOPPED": {
+      "n": 65,
+      "original_winners": 0,
+      "original_losers": 65,
+      "later_stop_hits": 65,
+      "return_from_entry_pct": {
+        "n": 65,
+        "median": 0.59208,
+        "q25": 0.40262,
+        "q75": 0.80645
+      },
+      "momentum_30m_pct": {
+        "n": 65,
+        "median": 0.00507,
+        "q25": -0.23504,
+        "q75": 0.17103
+      },
+      "momentum_90m_pct": {
+        "n": 65,
+        "median": -0.07227,
+        "q25": -0.26289,
+        "q75": 0.15183
+      },
+      "efficiency_90m": {
+        "n": 65,
+        "median": 0.12859,
+        "q25": 0.06148,
+        "q75": 0.21259
+      },
+      "higher_low_last3_vs_prev3": {
+        "n": 65,
+        "median": 0.0,
+        "q25": 0.0,
+        "q75": 1.0
+      },
+      "rvol_30m_vs_24h_median": {
+        "n": 65,
+        "median": 1.38244,
+        "q25": 0.90611,
+        "q75": 2.28702
+      },
+      "range_30m_pct": {
+        "n": 65,
+        "median": 0.44478,
+        "q25": 0.30999,
+        "q75": 0.72836
+      },
+      "all_5m_above_entry_last30m": {
+        "n": 65,
+        "median": 1.0,
+        "q25": 1.0,
+        "q75": 1.0
+      }
+    }
+  },
+  "cautions": [
+    "Observational retrospective associations. Original-win and scenario-stop labels are only known in the future.",
+    "Stopping before landmark is a competing event, not a negative feature.",
+    "Relative volume uses 24h 5m history, not hour-of-week seasonality.",
+    "No fixed decision rule can be inferred without a separate design and independent holdout.",
+    "No performance improvement or tradability established."
+  ]
+}

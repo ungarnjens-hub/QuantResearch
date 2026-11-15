@@ -1,0 +1,247 @@
+{
+  "scope": "DESCRIPTIVE landmark 120 min, NO optimized stop, NO validated predictive rule",
+  "definitions": {
+    "landmark": "120m after 5m close first confirms +0.60% favorable",
+    "outcome": "counterfactual stop improves vs original EMA exit (delta_pnl > 0)",
+    "negative_outcome": "zero OR harmful delta; zero often means no stop hit",
+    "features": "last fully closed 5m candle at landmark; no future information",
+    "auc": "AUC>0.5 means higher feature associated with stop benefit, not stop efficacy",
+    "split": "chronological median of eligible entry timestamps; descriptive"
+  },
+  "quality": {
+    "baseline_trades": 253,
+    "activated": 147,
+    "eligible": 146,
+    "excluded": 1,
+    "excluded_reasons": {
+      "original_exit_before_or_at_landmark": 1
+    },
+    "source_sha256": {
+      "paired": "290eaac23a4f1e09bcdefa72c5573874e2e69c4680f2c8a8302ba0952f589928",
+      "btc5m": "1c7da956cb6eafd0ca930eab67db1b620f15942fa6542a0165ae5cff2ac9950e",
+      "baseline_zip": "52db0cb1fe8ead0e78db5a54bf308fbb47370d3d99c877a4fa7f220a2179a9ab"
+    }
+  },
+  "groups": {
+    "ALL": {
+      "counts": {
+        "n": 146,
+        "original_winners": 77,
+        "stopped_in_120m_scenario": 95,
+        "beneficial_stop": 64,
+        "harmful_stop": 31,
+        "not_stopped": 51,
+        "total_counterfactual_delta_usdt": 3.1322
+      },
+      "features": {
+        "momentum_30m_pct": {
+          "beneficial_median": 0.03567,
+          "other_median": 0.02419,
+          "auc_high_predicts_benefit": 0.4987
+        },
+        "efficiency_90m": {
+          "beneficial_median": 0.12503,
+          "other_median": 0.16667,
+          "auc_high_predicts_benefit": 0.3866
+        },
+        "rvol_30m_vs_24h_median": {
+          "beneficial_median": 1.23625,
+          "other_median": 1.45351,
+          "auc_high_predicts_benefit": 0.4527
+        },
+        "higher_low_last3_vs_prev3": {
+          "beneficial_median": 1.0,
+          "other_median": 1.0,
+          "auc_high_predicts_benefit": 0.4903
+        },
+        "return_from_entry_pct": {
+          "beneficial_median": 0.56022,
+          "other_median": 0.87824,
+          "auc_high_predicts_benefit": 0.4156
+        }
+      },
+      "auc_ci95_week_block_unadjusted": {
+        "momentum_30m_pct": [
+          0.4066,
+          0.5845
+        ],
+        "efficiency_90m": [
+          0.2871,
+          0.4928
+        ],
+        "rvol_30m_vs_24h_median": [
+          0.3569,
+          0.5471
+        ],
+        "higher_low_last3_vs_prev3": [
+          0.4096,
+          0.5679
+        ],
+        "return_from_entry_pct": [
+          0.3303,
+          0.5138
+        ]
+      }
+    },
+    "TREND": {
+      "counts": {
+        "n": 68,
+        "original_winners": 32,
+        "stopped_in_120m_scenario": 49,
+        "beneficial_stop": 34,
+        "harmful_stop": 15,
+        "not_stopped": 19,
+        "total_counterfactual_delta_usdt": 0.2361
+      },
+      "features": {
+        "momentum_30m_pct": {
+          "beneficial_median": 0.04671,
+          "other_median": -0.0308,
+          "auc_high_predicts_benefit": 0.5813
+        },
+        "efficiency_90m": {
+          "beneficial_median": 0.15188,
+          "other_median": 0.16667,
+          "auc_high_predicts_benefit": 0.4619
+        },
+        "rvol_30m_vs_24h_median": {
+          "beneficial_median": 1.27229,
+          "other_median": 1.6371,
+          "auc_high_predicts_benefit": 0.4602
+        },
+        "higher_low_last3_vs_prev3": {
+          "beneficial_median": 1.0,
+          "other_median": 1.0,
+          "auc_high_predicts_benefit": 0.5147
+        },
+        "return_from_entry_pct": {
+          "beneficial_median": 0.51129,
+          "other_median": 0.92286,
+          "auc_high_predicts_benefit": 0.3356
+        }
+      }
+    },
+    "RECOVERY": {
+      "counts": {
+        "n": 78,
+        "original_winners": 45,
+        "stopped_in_120m_scenario": 46,
+        "beneficial_stop": 30,
+        "harmful_stop": 16,
+        "not_stopped": 32,
+        "total_counterfactual_delta_usdt": 2.896
+      },
+      "features": {
+        "momentum_30m_pct": {
+          "beneficial_median": -0.00094,
+          "other_median": 0.10765,
+          "auc_high_predicts_benefit": 0.4396
+        },
+        "efficiency_90m": {
+          "beneficial_median": 0.10316,
+          "other_median": 0.16803,
+          "auc_high_predicts_benefit": 0.3292
+        },
+        "rvol_30m_vs_24h_median": {
+          "beneficial_median": 1.16146,
+          "other_median": 1.40479,
+          "auc_high_predicts_benefit": 0.4347
+        },
+        "higher_low_last3_vs_prev3": {
+          "beneficial_median": 1.0,
+          "other_median": 1.0,
+          "auc_high_predicts_benefit": 0.4771
+        },
+        "return_from_entry_pct": {
+          "beneficial_median": 0.80116,
+          "other_median": 0.77521,
+          "auc_high_predicts_benefit": 0.4847
+        }
+      }
+    },
+    "EARLIER": {
+      "counts": {
+        "n": 73,
+        "original_winners": 39,
+        "stopped_in_120m_scenario": 49,
+        "beneficial_stop": 31,
+        "harmful_stop": 18,
+        "not_stopped": 24,
+        "total_counterfactual_delta_usdt": -10.6437
+      },
+      "features": {
+        "momentum_30m_pct": {
+          "beneficial_median": -0.02254,
+          "other_median": 0.1198,
+          "auc_high_predicts_benefit": 0.414
+        },
+        "efficiency_90m": {
+          "beneficial_median": 0.10491,
+          "other_median": 0.178,
+          "auc_high_predicts_benefit": 0.3917
+        },
+        "rvol_30m_vs_24h_median": {
+          "beneficial_median": 1.12686,
+          "other_median": 1.33802,
+          "auc_high_predicts_benefit": 0.4892
+        },
+        "higher_low_last3_vs_prev3": {
+          "beneficial_median": 1.0,
+          "other_median": 1.0,
+          "auc_high_predicts_benefit": 0.485
+        },
+        "return_from_entry_pct": {
+          "beneficial_median": 0.59551,
+          "other_median": 0.87824,
+          "auc_high_predicts_benefit": 0.4601
+        }
+      }
+    },
+    "LATER": {
+      "counts": {
+        "n": 73,
+        "original_winners": 38,
+        "stopped_in_120m_scenario": 46,
+        "beneficial_stop": 33,
+        "harmful_stop": 13,
+        "not_stopped": 27,
+        "total_counterfactual_delta_usdt": 13.7759
+      },
+      "features": {
+        "momentum_30m_pct": {
+          "beneficial_median": 0.04957,
+          "other_median": -0.02121,
+          "auc_high_predicts_benefit": 0.6083
+        },
+        "efficiency_90m": {
+          "beneficial_median": 0.13181,
+          "other_median": 0.15698,
+          "auc_high_predicts_benefit": 0.3795
+        },
+        "rvol_30m_vs_24h_median": {
+          "beneficial_median": 1.28866,
+          "other_median": 1.54834,
+          "auc_high_predicts_benefit": 0.4091
+        },
+        "higher_low_last3_vs_prev3": {
+          "beneficial_median": 1.0,
+          "other_median": 1.0,
+          "auc_high_predicts_benefit": 0.4977
+        },
+        "return_from_entry_pct": {
+          "beneficial_median": 0.53902,
+          "other_median": 0.86261,
+          "auc_high_predicts_benefit": 0.3652
+        }
+      }
+    }
+  },
+  "cautions": [
+    "Already repeatedly explored 2024-2025: no blind test; multiple comparisons unadjusted.",
+    "Outcome delta from fixed-entry counterfactual, not a full portfolio backtest.",
+    "Retrospective outcome labels cannot be used as features.",
+    "AUC for stop benefit vs zero-or-harm mixes stopped and not-stopped cases; report denominators.",
+    "90m ER, 30m volume and momenta are only candidate summaries, not validated predictors.",
+    "No thresholds, fitting or rule selection performed; no trading approval."
+  ]
+}

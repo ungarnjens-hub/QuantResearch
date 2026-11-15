@@ -1,0 +1,63 @@
+{
+  "classification": "EXPLORATORY / development set, not independent validation",
+  "hypothesis": "Mirror 1h trend entry for shorts, same fixed 12-17 UTC gate and 1.5 ATR stop; no optimizing",
+  "results": {
+    "TripleMA_BTC_V1_Gate_ATR15_TrendOnly": {
+      "trades": 81,
+      "wins": 21,
+      "net_usdt": 16.91076,
+      "mean_usdt": 0.20877,
+      "pf": 1.43558,
+      "stops": 35,
+      "short_trades": 0,
+      "long_trades": 81
+    },
+    "TripleMA_BTC_V1_Gate_ATR15_ShortOnly": {
+      "trades": 64,
+      "wins": 10,
+      "net_usdt": -17.72292,
+      "mean_usdt": -0.27692,
+      "pf": 0.53702,
+      "stops": 21,
+      "short_trades": 64,
+      "long_trades": 0
+    },
+    "TripleMA_BTC_V1_Gate_ATR15_LongShort": {
+      "trades": 145,
+      "wins": 31,
+      "net_usdt": -0.81216,
+      "mean_usdt": -0.0056,
+      "pf": 0.98947,
+      "stops": 56,
+      "short_trades": 64,
+      "long_trades": 81
+    }
+  },
+  "entry_set_comparison": {
+    "long_retained": 81,
+    "long_missing_in_combined": 0,
+    "long_new_in_combined": 0,
+    "short_retained": 64,
+    "short_missing_in_combined": 0,
+    "short_new_in_combined": 0
+  },
+  "qa": {
+    "long_reference_n81": true,
+    "long_reference_pnl16_91076": true,
+    "long_reference_pf1_43558": true,
+    "short_only_is_short": true,
+    "combined_no_other_types": true,
+    "short_has_atr_stops": true
+  },
+  "source_sha256": "15d766c086fb8aaa65cb4ceb71ae1f3ea992731bc14ea269244c804ee758fd88",
+  "previous_fourway_sha256": "039d5cef1d3698be5d996d5d770359cdb88976d1e2f9cf9039b6dc9be56d088f",
+  "previous_trendonly_sha256": "1e0d34d97299782ca22c8703f347cfc6efd15f18bdb80ecdd98f11ee71923c5d",
+  "zip": "/home/icom/QuantResearch/TripleMA_ShortMirror_Exploratory_V1/user_data/backtest_results/backtest-result-2026-11-15_16-04-16.zip",
+  "warnings": [
+    "Gated hours were selected from prior LONG results and are NOT validated for shorts.",
+    "Stop custom callback initial fill timing not independently verified.",
+    "Fee/funding/slippage and intrabar stop realism not fully audited.",
+    "Shorts may compete with longs for one position, compare joint model directly.",
+    "Do not claim independent profitability from this exploratory data."
+  ]
+}

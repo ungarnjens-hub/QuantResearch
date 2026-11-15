@@ -1,0 +1,139 @@
+{
+  "classification": "EXPLORATORY, selected on inspected development data",
+  "notes": [
+    "ATR14 is encoded in the signal tag to avoid delayed-entry lookahead.",
+    "Initial stop assigned by custom_stoploss callback; check in installed Freqtrade 2026.9 that callback is executed immediately after fill.",
+    "Intra-5m stop fills approximate; realistic slippage/funding not verified.",
+    "Profit factor is an estimate, not independent proof of profitability.",
+    "Timegate blocks nominal next-hour entry, not delayed fills."
+  ],
+  "variants": {
+    "TripleMA_BTC_V1": {
+      "n": 253,
+      "wins": 77,
+      "losses": 176,
+      "net_usdt": -14.18375,
+      "avg_usdt": -0.05606,
+      "pf": 0.91365,
+      "stop_exits": 0
+    },
+    "TripleMA_BTC_V1_No12to17UTC": {
+      "n": 189,
+      "wins": 59,
+      "losses": 130,
+      "net_usdt": 12.45565,
+      "avg_usdt": 0.0659,
+      "pf": 1.11616,
+      "stop_exits": 0
+    },
+    "TripleMA_BTC_V1_ATR15": {
+      "n": 253,
+      "wins": 72,
+      "losses": 181,
+      "net_usdt": -2.53524,
+      "avg_usdt": -0.01002,
+      "pf": 0.98173,
+      "stop_exits": 103
+    },
+    "TripleMA_BTC_V1_Gate_ATR15": {
+      "n": 189,
+      "wins": 56,
+      "losses": 133,
+      "net_usdt": 16.45651,
+      "avg_usdt": 0.08707,
+      "pf": 1.17215,
+      "stop_exits": 71
+    }
+  },
+  "trend_recovery": {
+    "TripleMA_BTC_V1": {
+      "trend": {
+        "n": 115,
+        "wins": 32,
+        "losses": 83,
+        "net_usdt": 0.81661,
+        "avg_usdt": 0.0071,
+        "pf": 1.01151,
+        "stop_exits": 0
+      },
+      "recovery": {
+        "n": 138,
+        "wins": 45,
+        "losses": 93,
+        "net_usdt": -15.00036,
+        "avg_usdt": -0.1087,
+        "pf": 0.83922,
+        "stop_exits": 0
+      }
+    },
+    "TripleMA_BTC_V1_No12to17UTC": {
+      "trend": {
+        "n": 81,
+        "wins": 22,
+        "losses": 59,
+        "net_usdt": 14.41534,
+        "avg_usdt": 0.17797,
+        "pf": 1.33269,
+        "stop_exits": 0
+      },
+      "recovery": {
+        "n": 108,
+        "wins": 37,
+        "losses": 71,
+        "net_usdt": -1.9597,
+        "avg_usdt": -0.01815,
+        "pf": 0.96933,
+        "stop_exits": 0
+      }
+    },
+    "TripleMA_BTC_V1_ATR15": {
+      "trend": {
+        "n": 115,
+        "wins": 29,
+        "losses": 86,
+        "net_usdt": 1.97072,
+        "avg_usdt": 0.01714,
+        "pf": 1.03198,
+        "stop_exits": 53
+      },
+      "recovery": {
+        "n": 138,
+        "wins": 43,
+        "losses": 95,
+        "net_usdt": -4.50596,
+        "avg_usdt": -0.03265,
+        "pf": 0.94162,
+        "stop_exits": 50
+      }
+    },
+    "TripleMA_BTC_V1_Gate_ATR15": {
+      "trend": {
+        "n": 81,
+        "wins": 21,
+        "losses": 60,
+        "net_usdt": 16.91076,
+        "avg_usdt": 0.20877,
+        "pf": 1.43558,
+        "stop_exits": 35
+      },
+      "recovery": {
+        "n": 108,
+        "wins": 35,
+        "losses": 73,
+        "net_usdt": -0.45425,
+        "avg_usdt": -0.00421,
+        "pf": 0.992,
+        "stop_exits": 36
+      }
+    }
+  },
+  "qa": {
+    "original_matches": true,
+    "gate_matches": true,
+    "atr_has_stop_exits": true,
+    "combined_has_stop_exits": true
+  },
+  "origin_strategy_sha256": "15d766c086fb8aaa65cb4ceb71ae1f3ea992731bc14ea269244c804ee758fd88",
+  "zip": "/home/icom/QuantResearch/TripleMA_TimeGate_ATR_Fourway_V1/user_data/backtest_results/backtest-result-2026-11-15_15-45-40.zip",
+  "log": "/home/icom/QuantResearch/TripleMA_TimeGate_ATR_Fourway_V1/backtest.log"
+}

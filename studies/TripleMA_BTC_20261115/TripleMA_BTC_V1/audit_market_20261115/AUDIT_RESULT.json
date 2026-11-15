@@ -1,0 +1,64 @@
+{
+  "baseline_zip": "/home/icom/QuantResearch/TripleMA_BTC_V1/results/backtest-result-2026-11-15_12-54-39.zip",
+  "baseline": {
+    "n": 253,
+    "wins": 77,
+    "win_pct": 30.43,
+    "pnl": -14.1838,
+    "pf": 0.9136,
+    "tags": {
+      "recovery": 138,
+      "trend": 115
+    },
+    "minutes": {
+      "00:00": 252,
+      "45:00": 1
+    }
+  },
+  "signal_audit": {
+    "data_file": "/home/icom/QuantResearch/TripleMA_BTC_V1/data/futures/BTC_USDT_USDT-1h-futures.feather",
+    "candles": 17963,
+    "date_from": "2024-01-01 00:00:00+00:00",
+    "date_to": "2026-01-18 10:00:00+00:00",
+    "checked_entries": 253,
+    "entry_mismatches": 0,
+    "entry_mismatch_examples": [],
+    "checked_exits": 253,
+    "exit_mismatches": 0,
+    "exit_mismatch_examples": [],
+    "late_entries": [
+      [
+        "2025-10-07 13:45:00+00:00",
+        "2025-10-07 12:00:00+00:00",
+        "trend",
+        -0.0002631731424366065
+      ]
+    ],
+    "recovery_prior_oversold_avg_atr": 5.996,
+    "recovery_current_below_atr": {
+      "below": 122,
+      "above_or_at": 16
+    }
+  },
+  "market_zip": "/home/icom/QuantResearch/TripleMA_BTC_V1/audit_market_20261115/results/backtest-result-2026-11-15_13-05-52.zip",
+  "market": {
+    "n": 253,
+    "wins": 77,
+    "win_pct": 30.43,
+    "pnl": -14.1838,
+    "pf": 0.9136,
+    "tags": {
+      "recovery": 138,
+      "trend": 115
+    },
+    "minutes": {
+      "00:00": 252,
+      "45:00": 1
+    }
+  },
+  "comparison": {
+    "pnl_difference_usdt": 0.0,
+    "trades_difference": 0
+  },
+  "disclaimer": "Exploratory comparison on already examined 2024-2025 data. Not an independent blind test. Market-order backtest has no real slippage guarantee."
+}

@@ -1,0 +1,75 @@
+{
+  "classification": "EXPLORATORY - hypothesis selected after inspecting same development sample",
+  "variants": {
+    "TripleMA_BTC_V1_Gate_ATR15": {
+      "n": 189,
+      "wins": 56,
+      "net_usdt": 16.45651,
+      "mean_usdt": 0.08707,
+      "pf": 1.17215,
+      "stop_exits": 71
+    },
+    "TripleMA_BTC_V1_Gate_ATR15_TrendOnly": {
+      "n": 81,
+      "wins": 21,
+      "net_usdt": 16.91076,
+      "mean_usdt": 0.20877,
+      "pf": 1.43558,
+      "stop_exits": 35
+    }
+  },
+  "by_tag": {
+    "TripleMA_BTC_V1_Gate_ATR15": {
+      "trend": {
+        "n": 81,
+        "wins": 21,
+        "net_usdt": 16.91076,
+        "mean_usdt": 0.20877,
+        "pf": 1.43558,
+        "stop_exits": 35
+      },
+      "recovery": {
+        "n": 108,
+        "wins": 35,
+        "net_usdt": -0.45425,
+        "mean_usdt": -0.00421,
+        "pf": 0.992,
+        "stop_exits": 36
+      }
+    },
+    "TripleMA_BTC_V1_Gate_ATR15_TrendOnly": {
+      "trend": {
+        "n": 81,
+        "wins": 21,
+        "net_usdt": 16.91076,
+        "mean_usdt": 0.20877,
+        "pf": 1.43558,
+        "stop_exits": 35
+      },
+      "recovery": {
+        "n": 0,
+        "wins": 0,
+        "net_usdt": 0,
+        "mean_usdt": null,
+        "pf": null,
+        "stop_exits": 0
+      }
+    }
+  },
+  "qa": {
+    "reference_n_189": true,
+    "reference_pnl_16_4565": true,
+    "reference_stop_count_71": true,
+    "trendonly_no_recovery": true,
+    "has_trendonly_stop_exits": true
+  },
+  "zip": "/home/icom/QuantResearch/TripleMA_TrendOnly_Gate_ATR15_AB_V1/user_data/backtest_results/backtest-result-2026-11-15_15-50-21.zip",
+  "reference_source_sha256": "15d766c086fb8aaa65cb4ceb71ae1f3ea992731bc14ea269244c804ee758fd88",
+  "previous_fourway_script_sha256": "039d5cef1d3698be5d996d5d770359cdb88976d1e2f9cf9039b6dc9be56d088f",
+  "notes": [
+    "Backtest rebuilds trade sequence; removed recovery entries may free positions for new trend trades.",
+    "Same timeframe, fee configuration and initial-stop implementation as preceding 4-way script.",
+    "Stop is defined by custom_stoploss callback; inspect Freqtrade callback initial-fill timing before production.",
+    "No new test data used; result does not validate out-of-sample performance."
+  ]
+}
